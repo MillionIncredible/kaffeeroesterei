@@ -77,5 +77,15 @@
     color: $color-white;
     text-decoration: none;
     background-color: $color-anthrazit;
+
+    &:hover {
+      border: 2px solid $color-mediumgrey;
+      background-color: $color-mediumgrey;
+    }
+
+    &:active {
+      border: 2px solid $color-kraftpaper;
+      background-color: $color-kraftpaper;
+    }
   }
 }
