@@ -5,3 +5,77 @@
 :root {
   --div-color: red;
 }
+
+.mobile-nav {
+  width: 375px;
+  height: 55px;
+
+  .main-logo {
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    top: 10px;
+    left: 24px;
+  }
+
+  .burger-menu {
+    position: absolute;
+    width: 23,5px;
+    height: 12,5px;
+    top: 21px;
+    left: 327px;
+  }
+}
+
+.header {
+  width: 376px;
+  height: 75%;
+
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  bottom: 0%;
+
+  z-index: -1;
+
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../imgs/FEND-Coffee-latte-art-3.png);
+  background-repeat: no-repeat;
+
+  color: $color-white;
+
+  .main-heading-mobile {
+    position: absolute;
+    font-weight: 900;
+    font-size: 64px;
+    width: 218px;
+    height: 75px;
+    top: 193px;
+    left: 78px;
+  }
+
+  .sub-heading-mobile {
+    position: absolute;
+    font-weight: 400;
+    font-size: 18px;
+    width: 218px;
+    height: 75px;
+    top: 268px;
+    left: 100px;
+  }
+
+  .to-shop-button {
+    position: absolute;
+    width: 163px;
+    height: 48px;
+    top: 392px;
+    left: 106px;
+    border-radius: 5px;
+    border: 2px solid $color-anthrazit;
+    box-sizing: border-box;
+    padding: 15px 45px 15px 45px;
+    color: $color-white;
+    text-decoration: none;
+    background-color: $color-anthrazit;
+  }
+}
