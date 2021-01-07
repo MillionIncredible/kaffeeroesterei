@@ -19,3 +19,15 @@ $h1-desktop: 96px;
 $h2-desktop: 48px;
 $h3-desktop: 42px;
 $body-text-desktop: 18px;
+
+//media queries
+// Small devices (landscape phones, 576px and up)
+$breakpoint-small-devices: 576px;
+// Medium devices (tablets, 768px and up)
+$breakpoint-medium-devices: 768px;
+// Large devices (desktops, 992px and up)
+$breakpoint-large-devices: 992px;
+// Extra large devices (large desktops, 1200px and up)
+$breakpoint-extralarge-devices: 1200px;
+// Very large desktop devices (1920px and up)
+$breakpoint-verylarge-devices: 1920px;
