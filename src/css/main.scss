@@ -95,7 +95,7 @@
   }
 }
 
-.roesterei-and-cafe{
+.roasting-and-coffeeshop{
   position: absolute;
   width: 327px;
   height: 382px;
@@ -108,19 +108,54 @@
     line-height: 34px;
   }
 
-  p {
-    font-size: $body-text-mobile;
-    font-weight: 400;
-    line-height: 18px;
+  .address-and-times {
+    overflow: hidden;
+
+    .address {
+      font-size: $body-text-mobile;
+      line-height: 18px;
+      float: left;
+    }
+
+    .times {
+      font-size: $body-text-mobile;
+      line-height: 18px;
+      float: right;
+    }
   }
 
-  .coffee-shop {
+  .coffee-shop-image {
     position: absolute;
     width: 241px;
     height: 182px;
-    //postioning missing
     background: url(../imgs/FEND-Coffee-shop.png);
+    background-repeat: no-repeat;
+    left: 86px;
+    top: 200px;
+  }
+}
+
+.bio-and-fair{
+  position: absolute;
+  width: 327px;
+  height: 340px;
+  left: 24px;
+  top: 982px;
+
+  h3 {
+    font-size: $h3-mobile;
+    font-weight: 900;
+    line-height: 37.5px;
   }
 
+  .coffee-plant-image {
+    position: absolute;
+    width: 241px;
+    height: 182px;
+    background: url(../imgs/FEND-coffee-plant.png);
+    background-repeat: no-repeat;
+    right: 86px;
+    top: 180px;
+  }
 }
 
