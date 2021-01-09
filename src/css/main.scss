@@ -1,5 +1,6 @@
 @import "variables";
 @import "base";
+@import "mixins";
 @import "components/hero";
 
 :root {
@@ -180,6 +181,35 @@
     font-size: $h2-mobile;
     font-weight: 900;
     line-height: 34px;
+  }
+
+  .flex-container {
+    background-color: darkolivegreen; //for testing purpose
+
+    width: 375px;
+
+    position: absolute;
+    left: 0;
+    top: 168px;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+    .item {
+      color: $color-lightgrey;
+      width: 155px;
+      height: 277px;
+
+      .coffee-image {
+        background-color: $color-lightgrey;
+      }
+
+      p {
+        color: $color-mediumgrey
+      }
+    }
+
   }
 }
 
