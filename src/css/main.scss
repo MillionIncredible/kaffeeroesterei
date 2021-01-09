@@ -159,26 +159,12 @@
   }
 }
 
-.bio-and-fair{
-  position: absolute;
-  width: 327px;
-  height: 340px;
-  left: 24px;
-  top: 982px;
-
-  h3 {
-    font-size: $h3-mobile;
-    font-weight: 900;
-    line-height: 37.5px;
-  }
-}
-
 .sorts {
   position: absolute;
   width: 375px;
   height: 910px;
   background-color: $color-anthrazit;
-  right: 0;
+  left: 0;
   top: 1382px;
 
   .section-sorts-heading {
