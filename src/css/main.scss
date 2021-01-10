@@ -289,3 +289,115 @@
   }
 }
 
+.in-there {
+  position: absolute;
+  width: 333px;
+  height: 604px;
+  top: 2684px;
+  left: 20px;
+
+  h2 {
+    font-size: $h2-mobile;
+    font-weight: 900;
+    line-height: 34px;
+    text-align: center;
+  }
+
+  .coffee-image {
+    width: 214px;
+    height: 284px;
+    position: absolute;
+    top: 69px;
+    left: 54px;
+  }
+
+  .logo-cup {
+    position: absolute;
+    width: 45.31px;
+    height: 45.8px;
+    left: 23px;
+    top: 397px;
+  }
+
+  .logo-cup-text {
+    font-size: $body-text-mobile;
+    font-weight: 400;
+    line-height: 18px;
+    text-align: center;
+
+    position: absolute;
+    width: 87px;
+    height: 49px;
+    left: 0;
+    top: 467px;
+  }
+
+  .logo-shovel {
+    position: absolute;
+    width: 45.31px;
+    height: 45.8px;
+    left: 147.97px;
+    top: 397px;
+  }
+
+  .logo-shovel-text {
+    font-size: $body-text-mobile;
+    font-weight: 400;
+    line-height: 18px;
+    text-align: center;
+
+    position: absolute;
+    width: 87px;
+    height: 49px;
+    left: 124px;
+    top: 467px;
+  }
+
+  .logo-plant {
+    position: absolute;
+    width: 45.31px;
+    height: 45.8px;
+    left: 271.91px;
+    top: 397px;
+  }
+
+  .logo-plant-text {
+    font-size: $body-text-mobile;
+    font-weight: 400;
+    line-height: 18px;
+    text-align: center;
+
+    position: absolute;
+    width: 87px;
+    height: 49px;
+    left: 246px;
+    top: 467px;
+  }
+
+
+  .to-shop-button {
+    position: absolute;
+    width: 163px;
+    height: 48px;
+    top: 556px;
+    left: 86px;
+    border-radius: 5px;
+    border: 2px solid $color-anthrazit;
+    box-sizing: border-box;
+    padding: 15px 45px 15px 45px;
+    color: $color-white;
+    text-decoration: none;
+    background-color: $color-anthrazit;
+
+    &:hover {
+      border: 2px solid $color-mediumgrey;
+      background-color: $color-mediumgrey;
+    }
+
+    &:active {
+      border: 2px solid $color-kraftpaper;
+      background-color: $color-kraftpaper;
+    }
+  }
+}
+
