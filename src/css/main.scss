@@ -8,23 +8,22 @@
 }
 
 .mobile-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   width: 375px;
   height: 55px;
 
   .main-logo {
-    position: absolute;
+    margin-left: 24px;
     width: 35px;
     height: 35px;
-    top: 10px;
-    left: 24px;
   }
 
   .burger-menu {
-    position: absolute;
-    width: 23,5px;
-    height: 12,5px;
-    top: 21px;
-    left: 327px;
+    margin-right: 21.5px;
+    width: 23.5px;
+    height: 12.5px;
   }
 }
 
@@ -38,6 +37,7 @@
   top: 0%;
   bottom: 0%;
 
+  //Wieso sehe ich die Navigation nicht, wenn z-index: -1 hier nicht steht?
   z-index: -1;
 
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../imgs/FEND-Coffee-latte-art-3.png);
@@ -45,10 +45,11 @@
 
   color: $color-white;
 
+  /*
   @media (min-width: $breakpoint-large-devices) {
     height: 65%;
   }
-  
+  */
 
   .main-heading-mobile {
     position: absolute;
