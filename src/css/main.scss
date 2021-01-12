@@ -1,3 +1,4 @@
+@import '../../node_modules/normalize.css/normalize.css';
 @import "variables";
 @import "base";
 @import "mixins";
@@ -28,16 +29,18 @@
 }
 
 .header {
-  width: 376px;
+  position: absolute;
+  top: 0%;
+
+  width: 375px;
   height: 75%;
 
-  position: absolute;
-  left: 0%;
-  right: 0%;
-  top: 0%;
-  bottom: 0%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
 
-  //Wieso sehe ich die Navigation nicht, wenn z-index: -1 hier nicht steht?
+  //Wieso sehe ich die Navigation nicht, wenn z-index: -1 hier nicht steht? -> wegen "postition: absolute;"
   z-index: -1;
 
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../imgs/FEND-Coffee-latte-art-3.png);
@@ -52,31 +55,39 @@
   */
 
   .main-heading-mobile {
-    position: absolute;
-    font-weight: 900;
-    font-size: 64px;
     width: 218px;
     height: 75px;
-    top: 193px;
-    left: 78px;
+    margin: 150px 80px 25px 78px;
+
+    h1 {
+      font-style: normal;
+      font-weight: 900;
+      font-size: $h1-mobile;
+      line-height: 75px;
+      text-align: center;
+    }
+
+
   }
 
   .sub-heading-mobile {
-    position: absolute;
-    font-weight: 400;
-    font-size: 18px;
-    width: 218px;
-    height: 75px;
-    top: 268px;
-    left: 100px;
+    width: 174px;
+    height: 21px;
+    margin: 0 100px 140px 100px;
+
+    p {
+      font-style: normal;
+      font-weight: normal;
+      font-size: $body-text-desktop;
+      line-height: 21px;
+      text-align: center;
+    }
   }
 
-  .to-shop-button {
-    position: absolute;
+  .to-shop-button a {
     width: 163px;
     height: 48px;
-    top: 392px;
-    left: 106px;
+
     border-radius: 5px;
     border: 2px solid $color-anthrazit;
     box-sizing: border-box;
@@ -96,6 +107,8 @@
     }
   }
 }
+
+//hier bin ich gerade zur flexboxisierung
 
 .roasting-and-coffeeshop{
   position: absolute;
@@ -400,7 +413,7 @@
 
 .come-over {
   position: absolute;
-  width: 376px;
+  width: 375px;
   height: 300px;
   left: 0px;
   top: 3360px;
@@ -415,7 +428,7 @@
 
   .map {
     position: absolute;
-    width: 376px;
+    width: 375px;
     height: 231px;
     left: 0px;
     top: 69px;
