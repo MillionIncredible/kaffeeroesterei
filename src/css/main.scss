@@ -12,8 +12,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 375px;
-  height: 55px;
+  width: 375px; //macht es hier nicht z.B. Sinn dann mit % oder vh zu arbeiten?
+  height: 55px; 
 
   .main-logo {
     margin-left: 24px;
@@ -48,11 +48,9 @@
 
   color: $color-white;
 
-  /*
   @media (min-width: $breakpoint-large-devices) {
     height: 65%;
   }
-  */
 
   .main-heading-mobile {
     width: 218px;
