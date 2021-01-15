@@ -9,7 +9,7 @@ body {
   font-size: $body-text-mobile;
 
   @media (min-width: 768px) {
-    background: linear-gradient(#e98a00, #f5aa2f);
+    //background: linear-gradient(#e98a00, #f5aa2f);
   }
 }
 
@@ -18,7 +18,7 @@ main {
     color: black;
 
     @media (min-width: 768px) {
-      color: var(--div-color);
+      
     }
   }
 }
