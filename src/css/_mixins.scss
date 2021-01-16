@@ -1,0 +1,17 @@
+@mixin for-size($size) {
+    @if $size == media-sm {
+      @media (min-width: $breakpoint-small-devices) { @content; }
+    } 
+    @else if $size == media-md {
+      @media (min-width: $breakpoint-medium-devices) { @content; }
+    } 
+    @else if $size == media-lg {
+      @media (min-width: $breakpoint-large-devices) { @content; }
+    } 
+    @else if $size == media-xl {
+      @media (min-width: $breakpoint-extralarge-devices) { @content; }
+    } 
+    @else if $size == media-xxl {
+      @media (min-width: $breakpoint-verylarge-devices) { @content; }
+    }
+  }
