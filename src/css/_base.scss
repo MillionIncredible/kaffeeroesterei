@@ -5,20 +5,5 @@
 
 body {
   background:#E5E5E5;
-
   font-size: $body-text-mobile;
-
-  @media (min-width: 768px) {
-    //background: linear-gradient(#e98a00, #f5aa2f);
-  }
-}
-
-main {
-  div {
-    color: black;
-
-    @media (min-width: 768px) {
-      
-    }
-  }
 }

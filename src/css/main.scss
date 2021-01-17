@@ -1,12 +1,8 @@
-@import '../../node_modules/normalize.css/normalize.css';
+@import "../../node_modules/normalize.css/normalize.css";
 @import "variables";
 @import "base";
 @import "mixins";
 @import "components/hero";
-
-:root {
-  --div-color: red;
-}
 
 .header {
   width: 100%;
@@ -15,13 +11,14 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../imgs/FEND-Coffee-latte-art-3.png); //image still scaling dumb
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(../imgs/FEND-Coffee-latte-art-3.png); //image still scaling dumb
   //background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   color: $color-white;
 
-  @include for-size(media-xxl){
+  @include for-size(media-xxl) {
     height: 65vh;
   }
 
@@ -30,8 +27,8 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    height: 55px; 
-  
+    height: 55px;
+
     .main-logo {
       margin-left: 2.75%;
       width: 35px;
@@ -40,7 +37,7 @@
         //margin-left: 103px;
       }
     }
-  
+
     .mobile-menu {
       margin-right: 21.5px;
       width: 23.5px;
@@ -70,7 +67,7 @@
         margin: 0 75px 0 0;
       }
 
-      li a{
+      li a {
         font-style: normal;
         font-weight: 500;
         font-size: 18px;
@@ -79,26 +76,24 @@
         color: $color-white;
 
         &::after {
-          content: '';
+          content: "";
           display: block;
-          width: 0; 
-          height: 1px; 
+          width: 0;
+          height: 1px;
           background: #fff;
-          transition: width .2s ease;
-          -webkit-transition: width .2s ease;
-          
+          transition: width 0.2s ease;
+          -webkit-transition: width 0.2s ease;
         }
 
-        &:hover:after{
+        &:hover:after {
           width: 60%;
           left: 0;
           background: #fff;
         }
       }
-
     }
   }
-  
+
   .main-heading-mobile {
     width: 218px;
     height: 75px;
@@ -116,7 +111,6 @@
       font-size: $h1-desktop;
       line-height: 110px;
     }
-
   }
 
   .sub-heading-mobile {
@@ -125,7 +119,7 @@
     margin: 5px 0 0 0;
     font-style: normal;
     font-weight: normal;
-    font-size: $body-text-desktop;
+    font-size: $body-text-mobile;
     line-height: 21px;
     text-align: center;
 
@@ -158,126 +152,178 @@
   }
 }
 
-.roasting-and-coffeeshop{
+.roasting-and-coffeeshop {
   display: flex;
   flex-direction: column;
+  //min-width: 327px;
   width: 90vw;
   height: 382px;
   margin: 60px auto 0 auto;
 
   @include for-size(media-lg) {
-    
+    flex-direction: row;
+    height: auto;
   }
 
-  h2 {
-    font-size: $h2-mobile;
-    font-weight: 900;
-    line-height: 34px;
-    margin: 0 72px 20px 0;
-
-    @include for-size(media-lg) {
-      font-size: $h2-desktop;
-      line-height: 56px;
-    }
-  }
-  
-  .info {
-    font-style: normal;
-    font-weight: normal;
-    font-size: $body-text-mobile;
-    line-height: 18px;
-    margin: 0 0 20px 0;
-
-    @include for-size(media-lg) {
-      font-size: $body-text-desktop;
-      width: 507px;
-      height: 48px;
-      line-height: 24px;
-    }
-  }
-
-  .address-and-times {
+  .section-text {
     display: flex;
+    flex-direction: column;
     margin: 0 0 40px 0;
 
-    .address {
-      width: 156px;
-      height: 32px;
-      font-style: normal;
-      font-weight: normal;
-      font-size: $body-text-mobile;
-      line-height: 18px;
-      margin: 0 17px 0 0;
+    @include for-size(media-lg) {
+      width: 50%;
+      min-height: 100%;
+      margin: 0;
+    }
+
+    h2 {
+      font-size: $h2-mobile;
+      font-weight: 900;
+      line-height: 34px;
+      margin: 0 72px 20px 0;
 
       @include for-size(media-lg) {
-        width: 298px;
-        height: 42px;
-        font-size: $body-text-desktop;
-        line-height: 24px;
+        margin: 0 72px 20px 5px;
+
+        font-size: $h2-desktop;
+        line-height: 56px;
       }
     }
 
-    .times {
-      width: 153px;
-      height: 32px;
+    .info {
       font-style: normal;
       font-weight: normal;
       font-size: $body-text-mobile;
+      width: 327px;
+      height: 54px;
       line-height: 18px;
-      margin: 0 1px 0 0;
+      margin: 0 0 20px 0;
 
       @include for-size(media-lg) {
         font-size: $body-text-desktop;
-        width: 154px;
-        height: 40px;
+        width: 507px;
+        height: 48px;
         line-height: 24px;
+      }
+    }
+    .address-and-times {
+      display: flex;
+
+      .address {
+        width: 156px;
+        height: 32px;
+        font-style: normal;
+        font-weight: normal;
+        font-size: $body-text-mobile;
+        line-height: 18px;
+        margin: 0 17px 0 0;
+
+        @include for-size(media-lg) {
+          width: 298px;
+          height: 42px;
+          font-size: $body-text-desktop;
+          line-height: 24px;
+        }
+      }
+
+      .times {
+        width: 153px;
+        height: 32px;
+        font-style: normal;
+        font-weight: normal;
+        font-size: $body-text-mobile;
+        line-height: 18px;
+        margin: 0 1px 0 0;
+
+        @include for-size(media-lg) {
+          font-size: $body-text-desktop;
+          width: 154px;
+          height: 40px;
+          line-height: 24px;
+        }
       }
     }
   }
 
-  .coffee-shop-image { 
+  .shop-image-container {
     align-self: flex-end;
     width: 241px;
     height: 182px;
-    background: url(../imgs/FEND-Coffee-shop.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    
-    @include for-size(media-lg) {
 
+    .shop-image {
+      max-width: 100%;
+
+      @include for-size(media-lg) {
+        //height: 391px;
+      }
     }
-    
+
+    @include for-size(media-lg) {
+      align-self: flex-start;
+      width: 50%;
+      height: 100%;
+    }
   }
 }
 
-.bio-and-fair{
+.bio-and-fair {
   display: flex;
   flex-direction: column;
   width: 90vw;
   height: 340px;
   margin: 40px auto 60px auto;
 
-  /*.section-heading-and-text {
-
-  }*/
-
-  h3 {
-    font-size: $h3-mobile;
-    font-weight: 900;
-    line-height: 37.5px;
-    margin: 12px 0 0 0;
+  @include for-size(media-lg) {
+    flex-direction: row-reverse;
+    height: auto;
   }
 
-  .coffee-plant-image {
-    width: 241px;
-    height: 182px;
-    background: url(../imgs/FEND-coffee-plant.png);
-    background-repeat: no-repeat;
-    margin: 40px 86px 0 0;
+  .section-heading-and-text {
+    
+    h3 {
+      font-size: $h3-mobile;
+      font-weight: 900;
+      line-height: 37.5px;
+      margin: 12px 0 0 0;
+
+      @include for-size(media-lg) { 
+        font-size: $h3-desktop;
+        padding: 50px 100px 0 100px;
+        margin: 0;
+      }
+    }
+  
+    p {
+      font-size: $body-text-mobile;
+
+      @include for-size(media-lg) {
+        font-size: $body-text-desktop;
+        padding: 0 100px 0 100px;
+      }
+    }
 
     @include for-size(media-lg) {
-      
+      align-self: center;
+      width: 50%;
+      min-height: 100%;
+      margin: 0;
+    }
+  }
+
+  .plant-image-container {
+    width: 241px;
+    height: 182px;
+
+    margin: 20px 86px 0 0;
+
+    .plant-image {
+      max-width: 100%;
+    }
+
+    @include for-size(media-lg) {
+      width: 50%;
+      height: 100%;
+      margin: 0;
     }
   }
 }
@@ -289,6 +335,10 @@
   height: 910px;
   background-color: $color-anthrazit;
 
+  @include for-size(media-lg) {
+    height: auto; //das gar nicht Mal so geil ..
+  }
+
   h2 {
     color: white;
     width: 309px;
@@ -297,6 +347,13 @@
     font-size: $h2-mobile;
     font-weight: 900;
     line-height: 34px;
+
+    @include for-size(media-lg){
+      width: 402px;
+      height: 119px;
+      font-size: $h2-desktop;
+      line-height: 56px;
+    }
   }
 
   .sorts-container {
@@ -307,6 +364,11 @@
     flex-wrap: wrap;
     margin: 40px 0 0 0;
 
+    @include for-size(media-lg){
+      margin: 80px 0 0 0;
+
+    }
+
     .item {
       color: $color-lightgrey;
       width: 155px;
@@ -315,9 +377,10 @@
 
       .coffee-image {
         background-color: $color-lightgrey;
+        width: 100%;
       }
 
-      .sorts-subheading{
+      .sorts-subheading {
         color: $color-white;
         font-style: normal;
         font-weight: normal;
@@ -333,7 +396,22 @@
         font-size: $body-text-mobile;
         line-height: 21px;
         margin: 0 0 5px 0;
+
+        @include for-size(media-lg) {
+          font-size: $body-text-desktop;
+        }
       }
+
+      @include for-size(media-lg){
+        width: 299px;
+        height: 399px;
+      }
+    }
+
+    .small-logo {
+      @include for-size(media-lg){
+        width: 17px;
+      }  
     }
   }
 
@@ -347,16 +425,21 @@
     padding: 15px 45px 15px 45px;
     color: $color-black;
     text-decoration: none;
-    background: linear-gradient(to right,  $color-black 50%, $color-white 50%);
+    background: linear-gradient(to right, $color-black 50%, $color-white 50%);
     background-size: 200% 100%;
     background-position: right bottom;
     transition: all 1s ease;
+
+    @include for-size(media-lg) {
+      margin-top: 125px;
+      margin-bottom: 125px;
+    }
 
     &:hover {
       color: $color-white;
       background-position: left bottom;
     }
-    
+
     &:active {
       background: $color-kraftpaper;
       border: 3px solid $color-kraftpaper;
@@ -368,18 +451,22 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  
+  justify-content: center;
   width: 100%;
-  height: 50vh;
-  
+  min-height: 50vh;
+
   //min-height für alte kleine Phones fehlt noch
 
   color: $color-white;
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../imgs/FEND-Coffee-bags-2.png);
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../imgs/FEND-Coffee-bags-2.png);
   //background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 
+  @include for-size(media-lg){
+    //height: auto;
+  }
 
   h3 {
     width: 129px;
@@ -388,6 +475,14 @@
     font-weight: 900;
     font-size: $h3-mobile;
     line-height: 37px;
+    margin-top: 0;
+
+    @include for-size(media-lg) {
+      width: 169px;
+      height: 49px;
+      font-size: $h3-desktop;
+      line-height: 49px;
+    }
   }
 
   p {
@@ -396,6 +491,13 @@
     font-size: $body-text-mobile;
     line-height: 18px;
     text-align: center;
+
+    @include for-size(media-lg) {
+      width: 306px;
+      height: 96px;
+      font-size: $body-text-desktop;
+      line-height: 24px;
+    }
   }
 
   .more-link {
@@ -405,6 +507,13 @@
     font-weight: normal;
     font-size: $body-text-mobile;
     line-height: 18px;
+
+    @include for-size(media-lg) {
+      width: 50px;
+      height: 20px;
+      font-size: $body-text-desktop;
+      line-height: 24px;
+    }
   }
 }
 
@@ -416,23 +525,59 @@
   height: 604px;
   margin: 60px auto 0 auto;
 
+  @include for-size(media-lg){
+    
+  }
+
   h2 {
     font-size: $h2-mobile;
     font-weight: 900;
     line-height: 34px;
     text-align: center;
     margin: 0;
+    width: 245px;
+    height: 34px;
+    
+    @include for-size(media-lg){
+      font-size: $h2-desktop;
+      width: 326px;
+      height: 56px;
+    }
   }
 
-  .coffee-image {
+  .coffee-image-container {
     width: 214px;
     height: 284px;
     margin-top: 35px;
+
+    @include for-size(media-lg){
+      align-self: flex-start;
+      width: 50%;
+      height: 502px;
+      //margin-top: 88px;
+    }
+
+    .coffee-image {
+      max-width: 100%;
+
+      @include for-size(media-lg){
+        height: 521px;
+      }
+
+    }
   }
 
   .logo-container {
     display: flex;
     margin: 44px 0 0 0;
+
+    @include for-size(media-lg){
+      align-self: flex-end;
+      flex-direction: column;
+      width: 50%;
+      height: 100%;
+      margin: 0;
+    }
 
     .item {
       display: flex;
@@ -445,36 +590,36 @@
       width: 45.31px;
       height: 45.8px;
     }
-  
+
     .logo-cup-text {
       font-size: $body-text-mobile;
       line-height: 18px;
       text-align: center;
       width: 87px;
     }
-  
+
     .logo-shovel {
       width: 45.31px;
       height: 45.8px;
     }
-  
+
     .logo-shovel-text {
       font-size: $body-text-mobile;
       line-height: 18px;
       text-align: center;
       width: 87px;
     }
-  
+
     .logo-plant {
       width: 45.31px;
       height: 45.8px;
     }
-  
+
     .logo-plant-text {
       font-size: $body-text-mobile;
       line-height: 18px;
       text-align: center;
-      width: 87px;  
+      width: 87px;
     }
   }
 
@@ -507,6 +652,10 @@
   height: 300px;
   margin: 70px 0 0 0;
 
+  @include for-size(media-lg) {
+    height: 484px;
+  }
+
   h2 {
     font-size: $h2-mobile;
     font-weight: 900;
@@ -519,6 +668,10 @@
     width: 100%;
     height: 231px;
     margin: 35px 0 0 0;
+
+    @include for-size(media-lg) {
+      height: 484px;
+    }
   }
 }
 
@@ -530,6 +683,10 @@
   background-color: $color-black;
   color: $color-white;
 
+  @include for-size(media-lg) {
+    padding-top: 50px; //testing
+  }
+  
   .footer-logo {
     width: 35px;
     height: 35px;
@@ -591,7 +748,6 @@
       font-size: $body-text-mobile;
       line-height: 18px;
       margin: 15px 0 0 22px;
-
     }
 
     .site-links {
