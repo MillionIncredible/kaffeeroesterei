@@ -4,6 +4,8 @@
 @import "mixins";
 @import "components/hero";
 
+/**************************************************** HEADER ****************************************************/
+
 .header {
   width: 100%;
   height: 75vh;
@@ -152,6 +154,8 @@
   }
 }
 
+/**************************************************** SECTION "RÖSTEREI & CAFÉ" ****************************************************/
+
 .roasting-and-coffeeshop {
   display: flex;
   flex-direction: column;
@@ -206,6 +210,7 @@
         line-height: 24px;
       }
     }
+
     .address-and-times {
       display: flex;
 
@@ -265,6 +270,9 @@
     }
   }
 }
+
+/**************************************************** SECTION "BIO UND FAIR" ****************************************************/
+
 
 .bio-and-fair {
   display: flex;
@@ -328,6 +336,8 @@
   }
 }
 
+/**************************************************** SECTION "ENTDECKE UNSERE KAFFEE SORTEN" ****************************************************/
+
 .sorts {
   display: flex;
   flex-direction: column;
@@ -353,6 +363,7 @@
       height: 119px;
       font-size: $h2-desktop;
       line-height: 56px;
+      margin: 60px 45px 0 130px;
     }
   }
 
@@ -447,6 +458,8 @@
   }
 }
 
+/**************************************************** SECTION "HERKUNFT" ****************************************************/ 
+
 .origin {
   display: flex;
   flex-direction: column;
@@ -516,6 +529,8 @@
     }
   }
 }
+
+/**************************************************** SECTION "DAS STECKT DRIN ****************************************************/
 
 .in-there {
   display: flex;
@@ -647,6 +662,8 @@
   }
 }
 
+/**************************************************** SECTION "KOMM VORBEI" ****************************************************/ 
+
 .come-over {
   width: 100%;
   height: 300px;
@@ -670,10 +687,12 @@
     margin: 35px 0 0 0;
 
     @include for-size(media-lg) {
-      height: 484px;
+      height: 415px;
     }
   }
 }
+
+/**************************************************** FOOTER ****************************************************/ 
 
 .footer {
   display: flex;
@@ -684,35 +703,76 @@
   color: $color-white;
 
   @include for-size(media-lg) {
-    padding-top: 50px; //testing
+    flex-direction: row;
+    height: 443px;
   }
+
+  .test {
+    @include for-size(media-lg){
+      display: flex;
+      flex-direction: column;
+      width: 25%;
+      margin: 0;
+    }
   
-  .footer-logo {
-    width: 35px;
-    height: 35px;
-    margin: 61px 0 0 22px;
-  }
+  
+    .footer-logo {
+      width: 35px;
+      height: 35px;
+      margin: 61px 0 0 22px;
 
-  .footer-heading {
-    width: 82px;
-    height: 28px;
-    font-size: 24px;
-    font-weight: 900;
-    line-height: 28.13px;
-    margin: 15px 0 0 22px;
-  }
+      @include for-size(media-lg) {
+        width: 69.95px;
+        height: 70px;
+        margin: 0;
+        margin: 125px 0 0 112px;
+      }
+    }
 
-  .footer-subheading {
-    width: 124px;
-    height: 21px;
-    font-size: 18px;
-    line-height: 21.09px;
-    margin: 15px 0 0 22px;
+    .footer-heading {
+      width: 82px;
+      height: 28px;
+      font-size: $h3-mobile;
+      font-weight: 900;
+      line-height: 28.13px;
+      margin: 15px 0 0 22px;
+
+      @include for-size(media-lg) {
+        font-size: $h3-desktop;
+        line-height: 49.22px;
+        width: 142,9px;
+        height: 49px;
+        margin: 16px 0 0 100px;
+      }
+    }
+
+    .footer-subheading {
+      width: 124px;
+      height: 21px;
+      font-size: 18px;
+      line-height: 21.09px;
+      margin: 15px 0 0 22px;
+
+      @include for-size(media-lg) {
+        font-size: $body-text-desktop;
+        line-height: 49.22px;
+        width: 142,9px;
+        height: 49px;
+        margin: 14px 0 0 100px;
+      }
+    }
   }
 
   .address-and-times {
     display: flex;
     margin: 0 0 40px 0;
+
+    @include for-size(media-lg) {
+      flex-direction: column;
+      justify-content: center;
+      margin: 0;
+      width: 25%;
+    }
 
     .address {
       width: 156px;
@@ -722,6 +782,13 @@
       font-size: $body-text-mobile;
       line-height: 18px;
       margin: 15px 0 0 22px;
+
+      @include for-size(media-lg) {
+        width: auto;
+        height: unset; 
+        font-size: $body-text-desktop;
+
+      }
     }
 
     .times {
@@ -733,36 +800,61 @@
       line-height: 18px;
       margin: 0 1px 0 0;
       margin: 15px 0 0 22px;
+
+      @include for-size(media-lg) {
+        width: auto;
+        height: unset; 
+        font-size: $body-text-desktop;     
+        margin: 27px 0 0 22px;
+
+      }
     }
   }
 
   .footer-links {
     display: flex;
     margin: 0 0 40px 0;
+    font-size: $body-text-mobile;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 18px;
+
+    @include for-size(media-lg) {
+        font-size: $body-text-desktop;
+        margin: 0;
+        align-items: center;
+        width: 50%;
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+      }
 
     .impr-and-privacy {
       width: 156px;
       height: 32px;
-      font-style: normal;
-      font-weight: normal;
-      font-size: $body-text-mobile;
-      line-height: 18px;
       margin: 15px 0 0 22px;
+
+      @include for-size(media-lg) {
+        width: auto;
+        height: auto;
+        margin: auto;
+        line-height: 18px;
+      }
     }
 
     .site-links {
       width: 153px;
       height: 32px;
-      font-style: normal;
-      font-weight: normal;
-      font-size: $body-text-mobile;
-      line-height: 18px;
       margin: 15px 0 0 22px;
+
+      @include for-size(media-lg) {
+        width: auto;
+        height: auto;
+        margin: 0;
+
+      }
     }
 
     a {
-      font-size: $body-text-mobile;
-      line-height: 18px;
       text-decoration: none;
       color: $color-white;
     }
