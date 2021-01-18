@@ -14,8 +14,8 @@
   justify-content: flex-start;
   align-items: center;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url(../imgs/FEND-Coffee-latte-art-3.png); //image still scaling dumb
-  //background-repeat: no-repeat;
+    url(../imgs/FEND-Coffee-latte-art-3.png); /*image still scaling dumb*/
+  background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   color: $color-white;
@@ -35,6 +35,7 @@
       margin-left: 2.75%;
       width: 35px;
       height: 35px;
+
       @include for-size(media-lg) {
         //margin-left: 103px;
       }
@@ -273,7 +274,6 @@
 
 /**************************************************** SECTION "BIO UND FAIR" ****************************************************/
 
-
 .bio-and-fair {
   display: flex;
   flex-direction: column;
@@ -287,20 +287,19 @@
   }
 
   .section-heading-and-text {
-    
     h3 {
       font-size: $h3-mobile;
       font-weight: 900;
       line-height: 37.5px;
       margin: 12px 0 0 0;
 
-      @include for-size(media-lg) { 
+      @include for-size(media-lg) {
         font-size: $h3-desktop;
         padding: 50px 100px 0 100px;
         margin: 0;
       }
     }
-  
+
     p {
       font-size: $body-text-mobile;
 
@@ -358,7 +357,7 @@
     font-weight: 900;
     line-height: 34px;
 
-    @include for-size(media-lg){
+    @include for-size(media-lg) {
       width: 402px;
       height: 119px;
       font-size: $h2-desktop;
@@ -375,9 +374,8 @@
     flex-wrap: wrap;
     margin: 40px 0 0 0;
 
-    @include for-size(media-lg){
+    @include for-size(media-lg) {
       margin: 80px 0 0 0;
-
     }
 
     .item {
@@ -413,16 +411,16 @@
         }
       }
 
-      @include for-size(media-lg){
+      @include for-size(media-lg) {
         width: 299px;
         height: 399px;
       }
     }
 
     .small-logo {
-      @include for-size(media-lg){
+      @include for-size(media-lg) {
         width: 17px;
-      }  
+      }
     }
   }
 
@@ -458,7 +456,7 @@
   }
 }
 
-/**************************************************** SECTION "HERKUNFT" ****************************************************/ 
+/**************************************************** SECTION "HERKUNFT" ****************************************************/
 
 .origin {
   display: flex;
@@ -477,7 +475,7 @@
   background-size: cover;
   background-position: center;
 
-  @include for-size(media-lg){
+  @include for-size(media-lg) {
     //height: auto;
   }
 
@@ -536,12 +534,13 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 50%;
+  width: 70%;
   height: 604px;
   margin: 60px auto 0 auto;
 
-  @include for-size(media-lg){
-    
+  @include for-size(media-lg) {
+    width: 50%;
+    height: auto;
   }
 
   h2 {
@@ -552,11 +551,11 @@
     margin: 0;
     width: 245px;
     height: 34px;
-    
-    @include for-size(media-lg){
+
+    @include for-size(media-lg) {
       font-size: $h2-desktop;
-      width: 326px;
-      height: 56px;
+      width: 100%;
+      height: auto;      
     }
   }
 
@@ -565,20 +564,18 @@
     height: 284px;
     margin-top: 35px;
 
-    @include for-size(media-lg){
+    @include for-size(media-lg) {
       align-self: flex-start;
       width: 50%;
-      height: 502px;
-      //margin-top: 88px;
+      margin: 0;
     }
 
     .coffee-image {
       max-width: 100%;
 
-      @include for-size(media-lg){
-        height: 521px;
+      @include for-size(media-lg) {
+        
       }
-
     }
   }
 
@@ -586,11 +583,11 @@
     display: flex;
     margin: 44px 0 0 0;
 
-    @include for-size(media-lg){
+    @include for-size(media-lg) {
       align-self: flex-end;
       flex-direction: column;
       width: 50%;
-      height: 100%;
+      //height: 50%;
       margin: 0;
     }
 
@@ -662,7 +659,7 @@
   }
 }
 
-/**************************************************** SECTION "KOMM VORBEI" ****************************************************/ 
+/**************************************************** SECTION "KOMM VORBEI" ****************************************************/
 
 .come-over {
   width: 100%;
@@ -692,7 +689,7 @@
   }
 }
 
-/**************************************************** FOOTER ****************************************************/ 
+/**************************************************** FOOTER ****************************************************/
 
 .footer {
   display: flex;
@@ -708,14 +705,13 @@
   }
 
   .test {
-    @include for-size(media-lg){
+    @include for-size(media-lg) {
       display: flex;
       flex-direction: column;
       width: 25%;
       margin: 0;
     }
-  
-  
+
     .footer-logo {
       width: 35px;
       height: 35px;
@@ -740,7 +736,7 @@
       @include for-size(media-lg) {
         font-size: $h3-desktop;
         line-height: 49.22px;
-        width: 142,9px;
+        width: 142, 9px;
         height: 49px;
         margin: 16px 0 0 100px;
       }
@@ -756,7 +752,7 @@
       @include for-size(media-lg) {
         font-size: $body-text-desktop;
         line-height: 49.22px;
-        width: 142,9px;
+        width: 142, 9px;
         height: 49px;
         margin: 14px 0 0 100px;
       }
@@ -785,9 +781,8 @@
 
       @include for-size(media-lg) {
         width: auto;
-        height: unset; 
+        height: unset;
         font-size: $body-text-desktop;
-
       }
     }
 
@@ -803,10 +798,9 @@
 
       @include for-size(media-lg) {
         width: auto;
-        height: unset; 
-        font-size: $body-text-desktop;     
+        height: unset;
+        font-size: $body-text-desktop;
         margin: 27px 0 0 22px;
-
       }
     }
   }
@@ -820,13 +814,13 @@
     line-height: 18px;
 
     @include for-size(media-lg) {
-        font-size: $body-text-desktop;
-        margin: 0;
-        align-items: center;
-        width: 50%;
-        flex-direction: row-reverse;
-        justify-content: flex-end;
-      }
+      font-size: $body-text-desktop;
+      margin: 0;
+      align-items: center;
+      width: 50%;
+      flex-direction: row-reverse;
+      justify-content: flex-end;
+    }
 
     .impr-and-privacy {
       width: 156px;
@@ -850,7 +844,6 @@
         width: auto;
         height: auto;
         margin: 0;
-
       }
     }
 
