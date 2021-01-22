@@ -1092,12 +1092,13 @@
 
 .fresh-pastries {
   width: 100%;
-  margin: 60px 24px 0 24px;
+  margin-top: 60px;
 
   h3 {
     width: 273px;
     height: 70px;
     margin: 0;
+    padding: 0 0 0 24px;
     font-style: normal;
     font-weight: 900;
     font-size: $h3-mobile;
@@ -1108,6 +1109,7 @@
     width: 327px;
     height: 223px;
     margin: 20px 0 0 0;
+    padding: 0 0 0 24px;
     font-style: normal;
     font-weight: normal;
     font-size: $body-text-mobile;
@@ -1121,22 +1123,25 @@
 
 .img-gallery {
   //margin: 46px 24px 0 24px;
-  
-  display: flex;
-  flex-wrap: wrap;
-
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-gap: 15px;
   width: 90%;
-  margin: 0 auto;
+  margin: 48px auto;
 
   .grid-image {
-    width: 340px;
-    height: 240px;
+    width: 100%;
     display: block;
-    padding: 10px;
     box-sizing: border-box;
+
+    /*&.item1 {
+      
+    }*/
+
   }
   
-  /* Ass a list.. easy and cool, but now working like I need it
+  /* Ass a list.. easy and cool, but not working like I need it
   ul {
     display: flex;
     flex-wrap: wrap;
