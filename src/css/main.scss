@@ -42,13 +42,43 @@
       }
     }
 
-    .mobile-menu {
+    .burger-menu {
       margin-right: 21.5px;
       width: 23.5px;
       height: 12.5px;
 
       @include for-size(media-lg) {
         display: none; //sollte über visibility
+      }
+    }
+
+    //HERE I AM RIGHT NOW
+    .mobile-menu {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      background-color: $color-black;
+      
+      display: none;
+
+      & ul {
+        padding: 0;
+
+        & li {
+          list-style: none;
+          width: 72px;
+          height: 21px;
+          margin: 0 75px 0 0;
+
+          & a {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 21px;
+            text-decoration: none;
+            color: $color-white;
+          }
+        }
       }
     }
 
@@ -69,30 +99,30 @@
         width: 72px;
         height: 21px;
         margin: 0 75px 0 0;
-      }
 
-      li a {
-        font-style: normal;
-        font-weight: 500;
-        font-size: 18px;
-        line-height: 21px;
-        text-decoration: none;
-        color: $color-white;
-
-        &::after {
-          content: "";
-          display: block;
-          width: 0;
-          height: 1px;
-          background: #fff;
-          transition: width 0.2s ease;
-          -webkit-transition: width 0.2s ease;
-        }
-
-        &:hover:after {
-          width: 60%;
-          left: 0;
-          background: #fff;
+        & a {
+          font-style: normal;
+          font-weight: 500;
+          font-size: 18px;
+          line-height: 21px;
+          text-decoration: none;
+          color: $color-white;
+  
+          &::after {
+            content: "";
+            display: block;
+            width: 0;
+            height: 1px;
+            background: #fff;
+            transition: width 0.2s ease;
+            -webkit-transition: width 0.2s ease;
+          }
+  
+          &:hover:after {
+            width: 60%;
+            left: 0;
+            background: #fff;
+          }
         }
       }
     }
@@ -911,7 +941,7 @@
       }
     }
 
-    .mobile-menu {
+    .burger-menu {
       margin-right: 21.5px;
       width: 23.5px;
       height: 12.5px;
@@ -1091,8 +1121,14 @@
 /**************************************************** SECTION "FRISCHES GEBÄCK VON NEBENAN" - SUBPAGE "DAS CAFÉ" - BEGINNING ****************************************************/
 
 .fresh-pastries {
+  display: flex;
+  flex-direction: column;
   width: 100%;
   margin-top: 60px;
+
+  @include for-size(media-lg) {
+    align-items: center;
+  }
 
   h3 {
     width: 273px;
@@ -1103,6 +1139,12 @@
     font-weight: 900;
     font-size: $h3-mobile;
     line-height: 37px;
+
+    @include for-size(media-lg) {
+      width: 349px;
+      height: 91px;
+      font-size: $h3-desktop;
+    }
   }
 
   p {
@@ -1114,6 +1156,12 @@
     font-weight: normal;
     font-size: $body-text-mobile;
     line-height: 18px;
+
+    @include for-size(media-lg) {
+      width: 611px;
+      height: 192px;
+      font-size: $body-text-desktop;
+    }
   }
 }
 
@@ -1122,50 +1170,32 @@
 /**************************************************** SECTION "IMAGE GALLERY" - SUBPAGE "DAS CAFÉ" - BEGINNING ****************************************************/
 
 .img-gallery {
-  //margin: 46px 24px 0 24px;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(156px, 1fr));
   grid-gap: 15px;
   width: 90%;
   margin: 48px auto;
 
   .grid-image {
-    width: 100%;
     display: block;
-    box-sizing: border-box;
+    width: 100%;
+    //height: 100%;
+    object-fit: cover;
 
-    /*&.item1 {
-      
-    }*/
+    /*
+    &.item1 {
 
-  }
-  
-  /* As a list.. easy and cool, but not working like I need it
-  ul {
-    display: flex;
-    flex-wrap: wrap;
-    list-style: none;
-    margin: 0;
-
-    li {
-      height: 40vh;
-      flex-grow: 1;
-      margin: 5px;
-
-      @media (max-aspect-ratio: 1/1) {
-          height: 30vh;
-      }
-
-      img {
-        max-height: 100%;
-        min-width: 100%;
-        object-fit: cover;
-        vertical-align: bottom;
-      }
     }
+
+    &.item2 {
+
+    }
+
+    &.item3 {
+
+    }
+    */
   }
-  */
 }
 
 /**************************************************** SECTION "IMAGE GALLERY" - SUBPAGE "DAS CAFÉ" - END ****************************************************/
