@@ -10,28 +10,35 @@
 </head>
 
 <body>
+  <!-- Header starts here -->
   <header class="header-thecafe">
-    <!-- Mobile Menu starts here -->
+    <!-- Mobile navigation bar starts here -->
     <nav class="mobile-navbar">
       <div class="main-logo">
-        <a href="../index.html"><img src="../imgs/Logo.svg" alt="main-logo"></a>
+        <a href="../index.html"><img src="../imgs/Logo.svg" alt="main-logo" /></a>
       </div>
-      <!-- <div class="mobile-menu">
+      <div id="mobile-menu" class="mobile-menu">
+        <div onclick="closeNav()" class="close-burger-menu">
+          <svg alt="close-burger-menu" width="21" height="22" viewBox="0 0 21 22" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path d="M1.5 2L10.5 11M19.5 20L10.5 11M10.5 11L1.5 20M10.5 11L19.5 2" stroke="white" stroke-width="3" />
+          </svg>
+        </div>
         <ul>
-          <li><a href="my-subpage/thecafe.html">das Café</a></li>
-          <li><a href="my-subpage/origin.html">Herkunft</a></li>
-          <li><a href="my-subpage/shop.html">Shop</a></li>
+          <li><a href="thecafe.html">das Café</a></li>
+          <li><a href="origin.html">Herkunft</a></li>
+          <li><a href="shop.html">Shop</a></li>
         </ul>
-      </div> -->
-      <div class="burger-menu">
-        <img src="../imgs/Burger Menu.svg" alt="burger-menu">
+      </div>
+      <div onclick="openNav()" class="burger-menu">
+        <img src="../imgs/Burger Menu.svg" alt="burger-menu" />
       </div>
     </nav>
     <!-- Mobile Menu ends here -->
     <!-- Desktop Menu starts here -->
     <nav class="desktop-menu">
       <div class="main-logo">
-        <a href="../index.html"><img src="../imgs/Logo.svg" alt="main-logo"></a>
+        <a href="../index.html"><img src="../imgs/Logo.svg" alt="main-logo" /></a>
       </div>
       <ul class="desktop-menu">
         <li><a href="thecafe.html">das Café</a></li>
@@ -115,7 +122,15 @@
       </div>
     </div>
   </footer>
-  <script src="../js/index.js"></script>
+  <script>
+    function openNav() {
+      document.getElementById("mobile-menu").style.width = "100%";
+    }
+
+    function closeNav() {
+      document.getElementById("mobile-menu").style.width = "0";
+    }
+  </script>
 </body>
 
 </html>

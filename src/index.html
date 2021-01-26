@@ -1,174 +1,194 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rustica</title>
-    <link rel="stylesheet" href="css/main.scss" />
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap" rel="stylesheet">
-  </head>
-  <body>
-    <header class="header">
-      <!-- Mobile navigation bar starts here -->
-      <nav class="mobile-navbar">
-        <div class="main-logo">
-          <a href="index.html"><img src="/imgs/Logo.svg" alt="main-logo"></a>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rustica</title>
+  <link rel="stylesheet" href="css/main.scss" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Header starts here -->
+  <header class="header">
+    <!-- Mobile navigation bar starts here -->
+    <nav class="mobile-navbar">
+      <div class="main-logo">
+        <a href="index.html"><img src="/imgs/Logo.svg" alt="main-logo"></a>
+      </div>
+      <div id="mobile-menu" class="mobile-menu">
+        <div onclick="closeNav()" class="close-burger-menu">
+          <svg alt="close-burger-menu" width="21" height="22" viewBox="0 0 21 22" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path d="M1.5 2L10.5 11M19.5 20L10.5 11M10.5 11L1.5 20M10.5 11L19.5 2" stroke="white" stroke-width="3" />
+          </svg>
         </div>
-        <div class="mobile-menu">
-          <div class="close-burger-menu">
-            <svg alt="close-burger-menu" width="21" height="22" viewBox="0 0 21 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M1.5 2L10.5 11M19.5 20L10.5 11M10.5 11L1.5 20M10.5 11L19.5 2" stroke="white" stroke-width="3"/>
-              </svg>
-          </div>
-          <ul>
-            <li><a href="my-subpage/thecafe.html">das Café</a></li>
-            <li><a href="my-subpage/origin.html">Herkunft</a></li>
-            <li><a href="my-subpage/shop.html">Shop</a></li>
-          </ul>
-        </div>
-        <div class="burger-menu">
-          <img src="/imgs/Burger Menu.svg" alt="burger-menu">
-        </div>
-      </nav>
-      <!-- Mobile navigation bar ends here -->
-      <!-- Desktop navigation bar starts here -->
-      <nav class="desktop-menu"> <!-- "desktop-navbar" -->
-        <div class="main-logo">
-          <a href="index.html"><img src="/imgs/Logo.svg" alt="main-logo"></a>
-        </div>
-        <ul class="desktop-menu">
+        <ul>
           <li><a href="my-subpage/thecafe.html">das Café</a></li>
           <li><a href="my-subpage/origin.html">Herkunft</a></li>
           <li><a href="my-subpage/shop.html">Shop</a></li>
         </ul>
-      </nav>
-      <!-- Desktop navigation bar ends here -->
-      <h1 class="main-heading">Rustica</h1>
-      <p class="sub-heading">Bio und Fair seit 1991</p>
-      <a class="to-shop-button" href="my-subpage/shop.html">zum Shop</a>
-    </header>
-    <main>
-      <section class="roasting-and-coffeeshop">
-        <div class="section-text">
-          <h2>Rösterei & Café</h2>
-          <p class="info">Kaffee aus Kiel, direkt gehandelt und geröstet in der eigenen Rösterei, serviert im gemütlichen Café in der Innenstadt.</p>
-          <div class="address-and-times">
-            <p class="address">Komm uns besuchen!<br>Fraunhoferstr. 13, Kiel</p>
-            <p class="times">Mo – Fr 8–18 Uhr<br>Sa 11–18 Uhr</p>
-          </div>
+      </div>
+      <div onclick="openNav()" class="burger-menu">
+        <img src="/imgs/Burger Menu.svg" alt="burger-menu">
+      </div>
+    </nav>
+    <!-- Mobile navigation bar ends here -->
+    <!-- Desktop navigation bar starts here -->
+    <nav class="desktop-menu">
+      <!-- "desktop-navbar" -->
+      <div class="main-logo">
+        <a href="index.html"><img src="/imgs/Logo.svg" alt="main-logo"></a>
+      </div>
+      <ul class="desktop-menu">
+        <li><a href="my-subpage/thecafe.html">das Café</a></li>
+        <li><a href="my-subpage/origin.html">Herkunft</a></li>
+        <li><a href="my-subpage/shop.html">Shop</a></li>
+      </ul>
+    </nav>
+    <!-- Desktop navigation bar ends here -->
+    <h1 class="main-heading">Rustica</h1>
+    <p class="sub-heading">Bio und Fair seit 1991</p>
+    <a class="to-shop-button" href="my-subpage/shop.html">zum Shop</a>
+  </header>
+  <!-- Header starts here -->
+  <main>
+    <section class="roasting-and-coffeeshop">
+      <div class="section-text">
+        <h2>Rösterei & Café</h2>
+        <p class="info">Kaffee aus Kiel, direkt gehandelt und geröstet in der eigenen Rösterei, serviert im gemütlichen
+          Café in der Innenstadt.</p>
+        <div class="address-and-times">
+          <p class="address">Komm uns besuchen!<br>Fraunhoferstr. 13, Kiel</p>
+          <p class="times">Mo – Fr 8–18 Uhr<br>Sa 11–18 Uhr</p>
         </div>
-        <div class="shop-image-container">
-          <img class="shop-image" src="/imgs/FEND-Coffee-shop.png" alt="coffee-shop">
-        </div>
-      </section>
-      <section class="bio-and-fair">
-        <div class="section-heading-and-text">
-          <h3>Bio und Fair</h3>
-          <p>Weit hinten, hinter den Wortbergen, fern der Länder Vokalien und Konsonantien leben die Blindtexte. Weit hinten, hinter den Wortbergen, fern der Länder Vokalien und Konsonantien leben die Blindtexte. Und das alles in bester Bio Qualität</p>
-        </div>
-        <div class="plant-image-container">
-          <img class="plant-image" src="/imgs/FEND-coffee-plant.png" alt="coffee-plant">
-        </div>
-      </section>
-      <section class="sorts">
-        <h2>Entdecke unsere Kaffee Sorten</h2>
-        <div class="sorts-container">
-          <div class="item">
-            <img class="coffee-image" src="../src/imgs/FEND_Coffee_Costa-Rica 2.png" alt="coffee-costa-rica">
-            <p class="sorts-subheading">Costa Rica</p class="sorts-subheading">
-            <p class="pricing">6,90€ – 26,90€</p>
-            <img class="small-logo" src="../src/imgs/Icon Kaffee Bohnen.svg" alt="logo-beans">
-            <img class="small-logo" src="../src/imgs/Icon French Press.svg" alt="logo-press">
-            <img class="small-logo" src="../src/imgs/Icon Kaffee Schaufel.svg" alt="logo-shovel">
-          </div>
-          <div class="item">
-            <img class="coffee-image" src="../src/imgs/FEND_Coffee_Costa-Rica 2.png" alt="coffee-costa-rica">
-            <p class="sorts-subheading">Costa Rica</p class="sorts-subheading">
-            <p class="pricing">6,90€ – 26,90€</p>
-            <img class="small-logo" src="../src/imgs/Icon Kaffee Bohnen.svg" alt="logo-beans">
-            <img class="small-logo" src="../src/imgs/Icon French Press.svg" alt="logo-press">
-            <img class="small-logo" src="../src/imgs/Icon Kaffee Schaufel.svg" alt="logo-shovel">
-          </div>
-          <div class="item">
-            <img class="coffee-image" src="../src/imgs/FEND_Coffee_Costa-Rica 2.png" alt="coffee-costa-rica">
-            <p class="sorts-subheading">Costa Rica</p class="sorts-subheading">
-            <p class="pricing">6,90€ – 26,90€</p>
-            <img class="small-logo" src="../src/imgs/Icon Kaffee Bohnen.svg" alt="logo-beans">
-            <img class="small-logo" src="../src/imgs/Icon French Press.svg" alt="logo-press">
-            <img class="small-logo" src="../src/imgs/Icon Kaffee Schaufel.svg" alt="logo-shovel">
-          </div>
-          <div class="item">
-            <img class="coffee-image" src="../src/imgs/FEND_Coffee_Costa-Rica 2.png" alt="coffee-costa-rica">
-            <p class="sorts-subheading">Costa Rica</p class="sorts-subheading">
-            <p class="pricing">6,90€ – 26,90€</p>
-            <img class="small-logo" src="../src/imgs/Icon Kaffee Bohnen.svg" alt="logo-beans">
-            <img class="small-logo" src="../src/imgs/Icon French Press.svg" alt="logo-press">
-            <img class="small-logo" src="../src/imgs/Icon Kaffee Schaufel.svg" alt="logo-shovel">
-          </div>
-        </div>
-        <a class="all-products-button" href="my-subpage/shop.html">alle Produkte</a>
-      </section>
-      <section class="origin">
-        <h3>Herkunft</h3>
-        <p>Weit hinten, hinter den Wortbergen, fern der Länder Vokalien und Konsonantien leben die Blindtexte. Und das alles in bester Bio Qualität</p>
-        <a class="more-link" href="my-subpage/origin.html">mehr</a>
-      </section>
-      <section class="in-there">
-        <h2>Das steckt drin</h2>
-        <div class="coffee-image-container">
+      </div>
+      <div class="shop-image-container">
+        <img class="shop-image" src="/imgs/FEND-Coffee-shop.png" alt="coffee-shop">
+      </div>
+    </section>
+    <section class="bio-and-fair">
+      <div class="section-heading-and-text">
+        <h3>Bio und Fair</h3>
+        <p>Weit hinten, hinter den Wortbergen, fern der Länder Vokalien und Konsonantien leben die Blindtexte. Weit
+          hinten, hinter den Wortbergen, fern der Länder Vokalien und Konsonantien leben die Blindtexte. Und das alles
+          in bester Bio Qualität</p>
+      </div>
+      <div class="plant-image-container">
+        <img class="plant-image" src="/imgs/FEND-coffee-plant.png" alt="coffee-plant">
+      </div>
+    </section>
+    <section class="sorts">
+      <h2>Entdecke unsere Kaffee Sorten</h2>
+      <div class="sorts-container">
+        <div class="item">
           <img class="coffee-image" src="../src/imgs/FEND_Coffee_Costa-Rica 2.png" alt="coffee-costa-rica">
+          <p class="sorts-subheading">Costa Rica</p class="sorts-subheading">
+          <p class="pricing">6,90€ – 26,90€</p>
+          <img class="small-logo" src="../src/imgs/Icon Kaffee Bohnen.svg" alt="logo-beans">
+          <img class="small-logo" src="../src/imgs/Icon French Press.svg" alt="logo-press">
+          <img class="small-logo" src="../src/imgs/Icon Kaffee Schaufel.svg" alt="logo-shovel">
         </div>
-        <div class="logo-container">
-          <div class="item">
-            <img class="logo-cup" src="../src/imgs/Icon Kaffee Tasse.svg" alt="logo-cup">
-            <p class="logo-cup-text">Bester Geschmack</p>
-          </div>
-          <div class="item">
-            <img class="logo-shovel" src="../src/imgs/Icon Kaffee Schaufel bigger.svg" alt="logo-shovel">
-            <p class="logo-shovel-text">Fair gehandelt</p>
-          </div>
-          <div class="item">
-            <img class="logo-plant" src="../src/imgs/Icon-Kaffee Pflanze.svg" alt="logo-plant">
-            <p class="logo-plant-text">Bio<br>Qualität</p>
-          </div>
+        <div class="item">
+          <img class="coffee-image" src="../src/imgs/FEND_Coffee_Costa-Rica 2.png" alt="coffee-costa-rica">
+          <p class="sorts-subheading">Costa Rica</p class="sorts-subheading">
+          <p class="pricing">6,90€ – 26,90€</p>
+          <img class="small-logo" src="../src/imgs/Icon Kaffee Bohnen.svg" alt="logo-beans">
+          <img class="small-logo" src="../src/imgs/Icon French Press.svg" alt="logo-press">
+          <img class="small-logo" src="../src/imgs/Icon Kaffee Schaufel.svg" alt="logo-shovel">
         </div>
-        <a class="to-shop-button" href="my-subpage/shop.html">zum Shop</a>
-      </section>
-      <section class="come-over">
-        <h2>Komm vorbei</h2>
-        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2325.8558807169056!2d10.119832116173097!3d54.34185538019983!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b2560c505797eb%3A0xf549da0f074162a9!2sFraunhoferstra%C3%9Fe%2013%2C%2024118%20Kiel!5e0!3m2!1sde!2sde!4v1611247167188!5m2!1sde!2sde">
-        </iframe>
-      </section>
-    </main>
-    <footer class="footer">
-      <div class="test">
-        <img class="footer-logo" src="/imgs/Logo.svg" alt="main-logo">
-        <h3 class="footer-heading">Rustica</h3>
-        <p class="footer-subheading">Café & Rösterei</p>
-      </div>
-      <div class="address-and-times">
-        <div class="address">
-          <p>Komm uns besuchen!<br>Fraunhoferstr. 13, Kiel</p>
+        <div class="item">
+          <img class="coffee-image" src="../src/imgs/FEND_Coffee_Costa-Rica 2.png" alt="coffee-costa-rica">
+          <p class="sorts-subheading">Costa Rica</p class="sorts-subheading">
+          <p class="pricing">6,90€ – 26,90€</p>
+          <img class="small-logo" src="../src/imgs/Icon Kaffee Bohnen.svg" alt="logo-beans">
+          <img class="small-logo" src="../src/imgs/Icon French Press.svg" alt="logo-press">
+          <img class="small-logo" src="../src/imgs/Icon Kaffee Schaufel.svg" alt="logo-shovel">
         </div>
-        <div class="times">
-          <p>Mo – Fr 8–18 Uhr<br>Sa 11–18 Uhr</p>
+        <div class="item">
+          <img class="coffee-image" src="../src/imgs/FEND_Coffee_Costa-Rica 2.png" alt="coffee-costa-rica">
+          <p class="sorts-subheading">Costa Rica</p class="sorts-subheading">
+          <p class="pricing">6,90€ – 26,90€</p>
+          <img class="small-logo" src="../src/imgs/Icon Kaffee Bohnen.svg" alt="logo-beans">
+          <img class="small-logo" src="../src/imgs/Icon French Press.svg" alt="logo-press">
+          <img class="small-logo" src="../src/imgs/Icon Kaffee Schaufel.svg" alt="logo-shovel">
         </div>
       </div>
-      <div class="footer-links">
-        <div class="impr-and-privacy">
-          <a href="my-subpage/imprint.html">Impressum</a>
-          <br>
-          <a href="my-subpage/dsgvo.html">Datenschutz</a>
+      <a class="all-products-button" href="my-subpage/shop.html">alle Produkte</a>
+    </section>
+    <section class="origin">
+      <h3>Herkunft</h3>
+      <p>Weit hinten, hinter den Wortbergen, fern der Länder Vokalien und Konsonantien leben die Blindtexte. Und das
+        alles in bester Bio Qualität</p>
+      <a class="more-link" href="my-subpage/origin.html">mehr</a>
+    </section>
+    <section class="in-there">
+      <h2>Das steckt drin</h2>
+      <div class="coffee-image-container">
+        <img class="coffee-image" src="../src/imgs/FEND_Coffee_Costa-Rica 2.png" alt="coffee-costa-rica">
+      </div>
+      <div class="logo-container">
+        <div class="item">
+          <img class="logo-cup" src="../src/imgs/Icon Kaffee Tasse.svg" alt="logo-cup">
+          <p class="logo-cup-text">Bester Geschmack</p>
         </div>
-        <div class="site-links">
-          <a href="my-subpage/thecafe.html">Café</a>
-          <br>
-          <a href="my-subpage/origin.html">Herkunft</a>
-          <br>
-          <a href="my-subpage/shop.html">Shop</a>
+        <div class="item">
+          <img class="logo-shovel" src="../src/imgs/Icon Kaffee Schaufel bigger.svg" alt="logo-shovel">
+          <p class="logo-shovel-text">Fair gehandelt</p>
+        </div>
+        <div class="item">
+          <img class="logo-plant" src="../src/imgs/Icon-Kaffee Pflanze.svg" alt="logo-plant">
+          <p class="logo-plant-text">Bio<br>Qualität</p>
         </div>
       </div>
-    </footer>
-    <script src="js/index.js"></script>
-  </body>
+      <a class="to-shop-button" href="my-subpage/shop.html">zum Shop</a>
+    </section>
+    <section class="come-over">
+      <h2>Komm vorbei</h2>
+      <iframe class="map"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2325.8558807169056!2d10.119832116173097!3d54.34185538019983!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b2560c505797eb%3A0xf549da0f074162a9!2sFraunhoferstra%C3%9Fe%2013%2C%2024118%20Kiel!5e0!3m2!1sde!2sde!4v1611247167188!5m2!1sde!2sde">
+      </iframe>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="test">
+      <img class="footer-logo" src="/imgs/Logo.svg" alt="main-logo">
+      <h3 class="footer-heading">Rustica</h3>
+      <p class="footer-subheading">Café & Rösterei</p>
+    </div>
+    <div class="address-and-times">
+      <div class="address">
+        <p>Komm uns besuchen!<br>Fraunhoferstr. 13, Kiel</p>
+      </div>
+      <div class="times">
+        <p>Mo – Fr 8–18 Uhr<br>Sa 11–18 Uhr</p>
+      </div>
+    </div>
+    <div class="footer-links">
+      <div class="impr-and-privacy">
+        <a href="my-subpage/imprint.html">Impressum</a>
+        <br>
+        <a href="my-subpage/dsgvo.html">Datenschutz</a>
+      </div>
+      <div class="site-links">
+        <a href="my-subpage/thecafe.html">Café</a>
+        <br>
+        <a href="my-subpage/origin.html">Herkunft</a>
+        <br>
+        <a href="my-subpage/shop.html">Shop</a>
+      </div>
+    </div>
+  </footer>
+  <script>
+    function openNav() {
+      document.getElementById("mobile-menu").style.width = "100%";
+    }
+
+    function closeNav() {
+      document.getElementById("mobile-menu").style.width = "0";
+    }
+  </script>
+</body>
+
 </html>
