@@ -1,10 +1,7 @@
-import myFunction, { multiply } from "./myModule";
+function openNav() {
+  document.getElementById("mobile-menu").style.width = "100%";
+}
 
-myFunction();
-
-const result = multiply(2, 5);
-
-console.log(result);
-
-
-
+function closeNav() {
+  document.getElementById("mobile-menu").style.width = "0";
+}
