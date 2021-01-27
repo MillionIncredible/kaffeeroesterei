@@ -18,7 +18,7 @@
         <a href="../index.html"><img src="../imgs/Logo.svg" alt="main-logo" /></a>
       </div>
       <div id="mobile-menu" class="mobile-menu">
-        <div onclick="closeNav()" class="close-burger-menu">
+        <div id="click-close" class="close-burger-menu">
           <svg alt="close-burger-menu" width="21" height="22" viewBox="0 0 21 22" fill="none"
             xmlns="http://www.w3.org/2000/svg">
             <path d="M1.5 2L10.5 11M19.5 20L10.5 11M10.5 11L1.5 20M10.5 11L19.5 2" stroke="white" stroke-width="3" />
@@ -30,7 +30,7 @@
           <li><a href="../shop/index.html">Shop</a></li>
         </ul>
       </div>
-      <div onclick="openNav()" class="burger-menu">
+      <div id="click-open" class="burger-menu">
         <img src="../imgs/Burger Menu.svg" alt="burger-menu" />
       </div>
     </nav>
@@ -87,50 +87,11 @@
     <img src="../imgs/FEND-Coffee-sign.png" alt="coffee-sign" class="grid-image item7" />
     <img src="../imgs/FEND-Coffee-latte-art-3.png" alt="coffee-latte-art-3" class="grid-image item8" />
   </section>
-  <section class="come-over">
-    <h2>Komm vorbei</h2>
-    <iframe class="map"
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2325.8558807169056!2d10.119832116173097!3d54.34185538019983!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b2560c505797eb%3A0xf549da0f074162a9!2sFraunhoferstra%C3%9Fe%2013%2C%2024118%20Kiel!5e0!3m2!1sde!2sde!4v1611247167188!5m2!1sde!2sde">
-    </iframe>
-  </section>
-  <!-- cant include footer here from template because of links -->
-  <footer class="footer">
-    <div class="test">
-      <img class="footer-logo" src="../imgs/Logo.svg" alt="main-logo" />
-      <h3 class="footer-heading">Rustica</h3>
-      <p class="footer-subheading">Café & Rösterei</p>
-    </div>
-    <div class="address-and-times">
-      <div class="address">
-        <p>Komm uns besuchen!<br />Fraunhoferstr. 13, Kiel</p>
-      </div>
-      <div class="times">
-        <p>Mo – Fr 8–18 Uhr<br />Sa 11–18 Uhr</p>
-      </div>
-    </div>
-    <div class="footer-links">
-      <div class="impr-and-privacy">
-        <a href="../imprint/index.html">Impressum</a>
-        <br />
-        <a href="../dsgvo/index.html">Datenschutz</a>
-      </div>
-      <div class="site-links">
-        <a href="../thecafe/index.html">Café</a>
-        <br />
-        <a href="../origin/index.html">Herkunft</a>
-        <br />
-        <a href="../shop/index.html">Shop</a>
-      </div>
-    </div>
-  </footer>
-  <script>
-    function openNav() {
-      document.getElementById("mobile-menu").style.width = "100%";
-    }
-
-    function closeNav() {
-      document.getElementById("mobile-menu").style.width = "0";
-    }
+  <!-- come-over section -->
+  <include src="../templates/come-over.html"></include>
+  <!-- footer -->
+  <include src="footer-subpages.html"></include>
+  <script src="../js/index.js">
   </script>
 </body>
 
