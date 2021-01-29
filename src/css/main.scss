@@ -1501,7 +1501,7 @@
 
   & .origin-vid {
     width: auto;
-    margin: 56px 24px 60px 24px;
+    margin: 56px 24px 0 24px;
     
     @include for-size(media-lg) {
       width: 1241px;
@@ -1512,4 +1512,154 @@
   }
 }
 
-/**************************************************** SECTION "FRISCHES GEBÄCK VON NEBENAN" - SUBPAGE "DAS CAFÉ" - END ****************************************************/
+/**************************************************** SECTION "DER URSPRUNG VON RUSTICA" - SUBPAGE "HERKUNFT" - END ****************************************************/
+
+/**************************************************** SECTION "DIE ANBAUGEBIETE" - SUBPAGE "HERKUNFT" - BEGINNING ****************************************************/
+
+
+.growing-area {
+  display: flex;
+  flex-direction: column;
+  //min-width: 327px;
+  width: 90vw;
+  margin: 60px auto 0 auto;
+
+  @include for-size(media-lg) {
+    flex-direction: row;
+    height: auto;
+  }
+
+  .section-text {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+
+    @include for-size(media-lg) {
+      width: 50%;
+      min-height: 100%;
+      margin: 0;
+    }
+  }
+
+    h3 {
+      width: 273px;
+      height: 32px;
+      font-size: $h3-mobile;
+      font-weight: 900;
+      line-height: 37px;
+      margin: 0 72px 0 0;
+
+      @include for-size(media-lg) {
+        margin: 0 72px 20px 5px;
+        font-size: $h3-desktop;
+        line-height: 56px;
+      }
+    }
+
+    p {
+      font-style: normal;
+      font-weight: normal;
+      font-size: $body-text-mobile;
+      width: 327px;
+      height: 198px;
+      line-height: 18px;
+      margin: 26px 0 0 0;
+
+      @include for-size(media-lg) {
+        font-size: $body-text-desktop;
+        width: 507px;
+        height: 48px;
+        line-height: 24px;
+      }
+    }
+
+  .plant-image-container {
+    align-self: flex-end;
+    width: 241px;
+    height: 160px;
+    margin-top: 60px;
+    
+    .plant-image {
+      max-width: 100%;
+
+      @include for-size(media-lg) {
+        //height: 391px;
+      }
+    }
+
+    @include for-size(media-lg) {
+      align-self: flex-start;
+      width: 50%;
+      height: 100%;
+    }
+  }
+}
+
+/**************************************************** SECTION "DIE ANBAUGEBIETE" - SUBPAGE "HERKUNFT" - END ****************************************************/
+
+/**************************************************** SECTION "DAS WOHL DER KAFFEBAUERN" - SUBPAGE "HERKUNFT" - BEGINNING ****************************************************/
+
+.well-farmers {
+  display: flex;
+  flex-direction: column;
+  width: 90vw;
+  margin: 60px auto 60px auto;
+
+  @include for-size(media-lg) {
+    flex-direction: row-reverse;
+    height: auto;
+  }
+
+  .section-heading-and-text {
+    h3 {
+      font-size: $h3-mobile;
+      font-weight: 900;
+      line-height: 37.5px;
+      margin: 0;
+
+      @include for-size(media-lg) {
+        font-size: $h3-desktop;
+        padding: 50px 100px 0 100px;
+        margin: 0;
+      }
+    }
+
+    p {
+      font-size: $body-text-mobile;
+      margin-top: 26px;
+
+      @include for-size(media-lg) {
+        font-size: $body-text-desktop;
+        padding: 0 100px 0 100px;
+      }
+    }
+
+    @include for-size(media-lg) {
+      align-self: center;
+      width: 50%;
+      min-height: 100%;
+      margin: 0;
+    }
+  }
+
+  & .worker-image-container {
+    width: 241px;
+    height: 320px;
+
+    margin: 60px 0 0 0;
+
+    .worker-image {
+      max-width: 100%;
+    }
+
+    @include for-size(media-lg) {
+      width: 50%;
+      height: 100%;
+      margin: 0;
+    }
+  }
+}
+
+/**************************************************** SECTION "DAS WOHL DER KAFFEBAUERN" - SUBPAGE "HERKUNFT" - BEGINNING ****************************************************/
+
+
