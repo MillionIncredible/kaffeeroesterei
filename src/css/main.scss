@@ -1550,6 +1550,8 @@
       margin: 0 72px 0 0;
 
       @include for-size(media-lg) {
+        width: 336px;
+        height: 49px;
         margin: 0 72px 20px 5px;
         font-size: $h3-desktop;
         line-height: 56px;
@@ -1567,8 +1569,8 @@
 
       @include for-size(media-lg) {
         font-size: $body-text-desktop;
-        width: 507px;
-        height: 48px;
+        width: 398px;
+        height: 283px;
         line-height: 24px;
       }
     }
@@ -1611,6 +1613,11 @@
   }
 
   .section-heading-and-text {
+
+    @include for-size(media-lg) {
+
+    }
+
     h3 {
       font-size: $h3-mobile;
       font-weight: 900;
@@ -1618,6 +1625,8 @@
       margin: 0;
 
       @include for-size(media-lg) {
+        width: 370px;
+        height: 98px;
         font-size: $h3-desktop;
         padding: 50px 100px 0 100px;
         margin: 0;
@@ -1629,8 +1638,12 @@
       margin-top: 26px;
 
       @include for-size(media-lg) {
+        width: 400px;
+        height: 302px;
         font-size: $body-text-desktop;
         padding: 0 100px 0 100px;
+        line-height: 24px;
+
       }
     }
 
@@ -1660,6 +1673,198 @@
   }
 }
 
-/**************************************************** SECTION "DAS WOHL DER KAFFEBAUERN" - SUBPAGE "HERKUNFT" - BEGINNING ****************************************************/
+/**************************************************** SECTION "DAS WOHL DER KAFFEBAUERN" - SUBPAGE "HERKUNFT" - END ****************************************************/
+
+/**************************************************** "HERKUNFT" PAGE - END ****************************************************/
+
+/**************************************************** "IMPRINT" PAGE - START ****************************************************/
+
+/**************************************************** SECTION "NAVIGATION" - SUBPAGE "IMPRESSUM" - BEGINNING ****************************************************/
+
+.header-imprint {
+
+  .mobile-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 55px;
+    background-color: $color-white;
+
+    @include for-size(media-lg) {
+      display: none; //sollte über visibility
+    }
+
+    .main-logo {
+      margin-left: 24px;
+      width: 35px;
+      height: 35px;
+      color: $color-black;
+    }
+
+    .burger-menu {
+      margin-right: 25.5px;
+      width: 23.5px;
+      height: 12.5px;
+      cursor: pointer;
+    }
+  }
+
+  .desktop-menu {
+    display: none;
+
+    @include for-size(media-lg) {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      list-style: none;
+      overflow: hidden;
+      padding: 0;
+      width: 100%;
+      height: 55px;
+    }
+
+    .main-logo {
+      margin-left: 103px;
+      width: 35px;
+      height: 35px;
+    }
+
+    li {
+      width: 72px;
+      height: 21px;
+      margin: 0 100px 0 0;
+
+      & a {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 21px;
+        text-decoration: none;
+        color: $color-black;
+
+        &::after {
+          content: "";
+          display: block;
+          width: 0;
+          height: 1px;
+          background: $color-black;
+          transition: width 0.2s ease;
+          -webkit-transition: width 0.2s ease;
+        }
+
+        &:hover:after {
+          width: 60%;
+          left: 0;
+          background: $color-black;
+        }
+      }
+    }
+  }
+
+  .mobile-menu {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: $color-black;
+    overflow-x: hidden;
+    transition: 0.5s;
+
+    & ul {
+      margin-top: 251px;
+      margin-left: 60px;
+      padding: 0;
+      transition: 0.5s;
+
+      & li {
+        width: 127px;
+        height: 38px;
+        list-style: none;
+
+        & a {
+          font-style: normal;
+          font-weight: 900;
+          font-size: $h3-mobile;
+          line-height: 21px;
+          text-decoration: none;
+          color: $color-white;
+        }
+      }
+    }
+    
+    .close-burger-menu {
+      width: 23.5px;
+      height: 12.5px;
+      padding: 21px 24.5px 0 0;
+      cursor: pointer;
+      align-self: flex-end;
+    }
+  }
+}
+
+/**************************************************** SECTION "NAVIGATION" - SUBPAGE "IMPRESSUM" - END ****************************************************/
+
+/**************************************************** SECTION "IMPRINT" - SUBPAGE "IMPRESSUM" - BEGINNING ****************************************************/
+
+.imprint-privacy-policy {
+  width: 80vw;
+  margin: 78px auto 38px auto;
+  padding-bottom: 20px;
+
+  @include for-size(media-lg){
+    margin: 219px auto 122px auto;
+  }
+
+  & h2 {
+    font-size: $h2-mobile;
+    font-weight: 900;
+    font-style: normal;
+    margin: 0;
+    line-height: 56.25px;
+
+    @include for-size(media-lg){
+      font-size: $h2-desktop;
+    }
+  }
+
+  & h3 {
+    font-size: $h3-mobile;
+    font-weight: 900;
+    font-style: normal;
+    margin: 0;
+    margin-top: 2.5%;
+    line-height: 49.22px;
+
+    @include for-size(media-lg){
+      font-size: $h3-desktop;
+    }
+  }
+
+  & p {
+    font-size: $body-text-mobile;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    margin-bottom: 5%;
+    line-height: 24px;
+
+    @include for-size(media-lg){
+      font-size: $body-text-desktop;
+    }
+  }
+}
+
+/**************************************************** SECTION "IMPRINT" - SUBPAGE "IMPRESSUM" - END ****************************************************/
+
+
+
+
+
+
 
 
