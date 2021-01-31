@@ -219,6 +219,7 @@
   @include for-size(media-lg) {
     flex-direction: row;
     height: auto;
+    margin: 124px auto 0 auto;
   }
 
   .section-text {
@@ -260,6 +261,8 @@
         width: 507px;
         height: 48px;
         line-height: 24px;
+        margin: 35px 0 20px 0;
+
       }
     }
 
@@ -280,6 +283,8 @@
           height: 42px;
           font-size: $body-text-desktop;
           line-height: 24px;
+          margin: 35px 17px 0 0;
+
         }
       }
 
@@ -297,6 +302,8 @@
           width: 154px;
           height: 40px;
           line-height: 24px;
+          margin: 35px 17px 0 0;
+
         }
       }
     }
@@ -340,6 +347,14 @@
   }
 
   .section-heading-and-text {
+
+    @include for-size(media-lg) {
+      align-self: center;
+      width: 50%;
+      min-height: 100%;
+      margin: 0;
+    }
+
     h3 {
       font-size: $h3-mobile;
       font-weight: 900;
@@ -347,6 +362,8 @@
       margin: 12px 0 0 0;
 
       @include for-size(media-lg) {
+        width: 227px;
+        height: 49px;
         font-size: $h3-desktop;
         padding: 50px 100px 0 100px;
         margin: 0;
@@ -357,16 +374,28 @@
       font-size: $body-text-mobile;
 
       @include for-size(media-lg) {
+        width: 402px;
+        height: 120px;
         font-size: $body-text-desktop;
+        margin: 24px 0 0 0;
         padding: 0 100px 0 100px;
       }
     }
 
-    @include for-size(media-lg) {
-      align-self: center;
-      width: 50%;
-      min-height: 100%;
-      margin: 0;
+    a {
+      display: none;
+
+
+      @include for-size(media-lg) {
+        text-decoration: none;
+        color: $color-black;
+        display: block;
+        line-height: 0;
+        font-size: $body-text-desktop;
+        margin: 9px 0 0 0;
+        padding: 0 100px 0 100px;
+      }
+
     }
   }
 
@@ -752,7 +781,7 @@
 
 /**************************************************** SECTION "KOMM VORBEI" - MAIN PAGE - END ****************************************************/
 
-/**************************************************** FOOTER - MAIN PAGE - BEGINNING ****************************************************/
+/**************************************************** FOOTER - !FOR ALL PAGES! - BEGINNING ****************************************************/
 
 .footer {
   display: flex;
@@ -900,11 +929,11 @@
 
     .site-links {
       width: 153px;
-      height: 32px;
+      height: auto;
       margin: 15px 0 0 22px;
 
       @include for-size(media-lg) {
-        width: auto;
+        width: 156px;
         height: auto;
         margin: 40px 0 0 0;
       }
@@ -917,7 +946,7 @@
   }
 }
 
-/**************************************************** FOOTER - MAIN PAGE - END ****************************************************/
+/**************************************************** FOOTER - !FOR ALL PAGES! - END ****************************************************/
 
 /**************************************************** MAIN PAGE END ****************************************************/
 
@@ -1080,6 +1109,7 @@
   @include for-size(media-lg) {
     flex-direction: row;
     height: auto;
+    margin: 124px auto 0 auto;
   }
 
   .section-text {
@@ -1090,7 +1120,7 @@
     @include for-size(media-lg) {
       width: 50%;
       min-height: 100%;
-      margin: 0;
+      margin: 0 0 40px 0;
     }
 
     h2 {
@@ -1120,6 +1150,8 @@
         width: 507px;
         height: 48px;
         line-height: 24px;
+        margin: 35px 0 20px 0;
+
       }
     }
 
@@ -1140,6 +1172,7 @@
           height: 42px;
           font-size: $body-text-desktop;
           line-height: 24px;
+          margin: 35px 17px 0 0;
         }
       }
 
@@ -1157,6 +1190,8 @@
           width: 154px;
           height: 40px;
           line-height: 24px;
+          margin: 35px 17px 0 0;
+
         }
       }
     }
@@ -1195,6 +1230,7 @@
 
   @include for-size(media-lg) {
     align-items: center;
+    margin-top: 125px;
   }
 
   h3 {
@@ -1252,15 +1288,18 @@
   width: 90%;
   margin: 48px auto;
 
-/*  @include for-size(media-lg) {
+  @include for-size(media-lg) {
+    margin-top: 125px;
+    /*
     grid-template-columns: repeat(auto-fit, 298px);
 
     grid-template-areas:
     "img1 img2" "img3" "img6"
     "img7 img2" "img5" "img6"
     "img7 img8" "img5" "img4";
+    */
   }
-*/
+  
   .grid-image {
     display: block;
     width: 100%;
