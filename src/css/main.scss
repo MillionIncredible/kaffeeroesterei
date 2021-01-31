@@ -1274,7 +1274,8 @@
 
 .img-gallery {
   display: grid;
-  grid-template-columns: repeat(auto-fit, 156px);
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4);
 
   grid-template-areas:
     "img1 img2"
@@ -1289,15 +1290,15 @@
   margin: 48px auto;
 
   @include for-size(media-lg) {
-    margin-top: 125px;
-    /*
-    grid-template-columns: repeat(auto-fit, 298px);
+    margin: 125px auto 0 auto;
+
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: repeat(3);
 
     grid-template-areas:
-    "img1 img2" "img3" "img6"
-    "img7 img2" "img5" "img6"
-    "img7 img8" "img5" "img4";
-    */
+    "img1 img2 img3 img6"
+    "img7 img2 img5 img6"
+    "img7 img8 img5 img4";
   }
   
   .grid-image {
