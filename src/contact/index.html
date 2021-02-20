@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kontakt</title>
+    <link rel="stylesheet" href="../css/main.scss" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <include src="only-nav.html"></include>
+    <section class="contact-section">
+      <h2>Du hast Fragen? Schreib uns gern!</h2>
+      <form
+        class="contact-fomular"
+        action="mailto:contact@kaffeerösterei.com"
+        method="POST"
+      >
+        <label class="label-input-field" for="name">Name*</label>
+        <br />
+        <input
+          type="text"
+          name="name"
+          class="input-field"
+          placeholder="Name"
+          required
+        />
+        <br />
+        <label class="label-input-field" for="email">E-Mail*</label>
+        <br />
+        <input
+          type="email"
+          name="email"
+          class="input-field"
+          placeholder="E-Mail"
+          required
+        />
+        <br />
+        <label class="label-input-field" for="tel">Telefonnummer</label>
+        <br />
+        <input
+          type="tel"
+          name="tel"
+          class="input-field"
+          placeholder="Telefonnummer"
+        />
+        <br />
+        <div class="dropdown">
+          <div id="full-button">
+            <div id="dropbtn" class="dropbtn">Dein Betreff</div>
+            <div class="arrow-container">
+              <svg
+                id="arrow"
+                class="arrow"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M13.7549 3.26855L7.29687 8.16602L6.98144 8.16602L0.523437 3.26855L0.523437 0.911132L7.13086 5.19434L13.7549 0.911133L13.7549 3.26855Z"
+                  fill="white"
+                />
+              </svg>
+            </div>
+          </div>
+          <div id="myDropdown" class="dropdown-content">
+            <p class="selection" id="option1">Fragen zur Lieferung</p>
+            <p class="selection" id="option2">Fragen zum Produkt</p>
+            <p class="selection" id="option3">Vertriebsfragen</p>
+            <p class="selection" id="option4">einfach nur so!</p>
+          </div>
+        </div>
+        <br />
+        <label class="label-input-field" for="message">Deine Nachricht</label>
+        <br />
+        <textarea
+          type="textarea"
+          name="message"
+          id=""
+          rows="4"
+          cols="20"
+          placeholder="Was hast du auf dem Herzen?"
+        ></textarea>
+        <br />
+        <label class="main">
+          <input type="checkbox" />
+          <span class="checkbox-span"></span>
+          Ich akzeptiere die Datenschutzerklärung
+        </label>
+        <br />
+        <button class="contact-send">abschicken</button>
+      </form>
+    </section>
+    <include src="footer-subpages.html"></include>
+    <script src="../js/index.js"></script>
+    <script src="../js/dropdown.js"></script>
+  </body>
+</html>

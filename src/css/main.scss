@@ -136,7 +136,7 @@
         }
       }
     }
-    
+
     .close-burger-menu {
       width: 23.5px;
       height: 12.5px;
@@ -262,7 +262,6 @@
         height: 48px;
         line-height: 24px;
         margin: 35px 0 20px 0;
-
       }
     }
 
@@ -284,7 +283,6 @@
           font-size: $body-text-desktop;
           line-height: 24px;
           margin: 35px 17px 0 0;
-
         }
       }
 
@@ -303,7 +301,6 @@
           height: 40px;
           line-height: 24px;
           margin: 35px 17px 0 0;
-
         }
       }
     }
@@ -347,7 +344,6 @@
   }
 
   .section-heading-and-text {
-
     @include for-size(media-lg) {
       align-self: center;
       width: 50%;
@@ -385,7 +381,6 @@
     a {
       display: none;
 
-
       @include for-size(media-lg) {
         text-decoration: none;
         color: $color-black;
@@ -395,7 +390,6 @@
         margin: 9px 0 0 0;
         padding: 0 100px 0 100px;
       }
-
     }
   }
 
@@ -1083,7 +1077,7 @@
         }
       }
     }
-    
+
     .close-burger-menu {
       width: 23.5px;
       height: 12.5px;
@@ -1151,7 +1145,6 @@
         height: 48px;
         line-height: 24px;
         margin: 35px 0 20px 0;
-
       }
     }
 
@@ -1191,7 +1184,6 @@
           height: 40px;
           line-height: 24px;
           margin: 35px 17px 0 0;
-
         }
       }
     }
@@ -1296,11 +1288,11 @@
     grid-template-rows: repeat(3);
 
     grid-template-areas:
-    "img1 img2 img3 img6"
-    "img7 img2 img5 img6"
-    "img7 img8 img5 img4";
+      "img1 img2 img3 img6"
+      "img7 img2 img5 img6"
+      "img7 img8 img5 img4";
   }
-  
+
   .grid-image {
     display: block;
     width: 100%;
@@ -1477,7 +1469,7 @@
         }
       }
     }
-    
+
     .close-burger-menu {
       width: 23.5px;
       height: 12.5px;
@@ -1542,12 +1534,11 @@
   & .origin-vid {
     width: auto;
     margin: 56px 24px 0 24px;
-    
+
     @include for-size(media-lg) {
       width: 1241px;
       height: 698px;
       margin: 126px 100px 125px 100px;
-
     }
   }
 }
@@ -1555,7 +1546,6 @@
 /**************************************************** SECTION "DER URSPRUNG VON RUSTICA" - SUBPAGE "HERKUNFT" - END ****************************************************/
 
 /**************************************************** SECTION "DIE ANBAUGEBIETE" - SUBPAGE "HERKUNFT" - BEGINNING ****************************************************/
-
 
 .growing-area {
   display: flex;
@@ -1581,46 +1571,46 @@
     }
   }
 
-    h3 {
-      width: 273px;
-      height: 32px;
-      font-size: $h3-mobile;
-      font-weight: 900;
-      line-height: 37px;
-      margin: 0 72px 0 0;
+  h3 {
+    width: 273px;
+    height: 32px;
+    font-size: $h3-mobile;
+    font-weight: 900;
+    line-height: 37px;
+    margin: 0 72px 0 0;
 
-      @include for-size(media-lg) {
-        width: 336px;
-        height: 49px;
-        margin: 0 72px 20px 5px;
-        font-size: $h3-desktop;
-        line-height: 56px;
-      }
+    @include for-size(media-lg) {
+      width: 336px;
+      height: 49px;
+      margin: 0 72px 20px 5px;
+      font-size: $h3-desktop;
+      line-height: 56px;
     }
+  }
 
-    p {
-      font-style: normal;
-      font-weight: normal;
-      font-size: $body-text-mobile;
-      width: 327px;
-      height: 198px;
-      line-height: 18px;
-      margin: 26px 0 0 0;
+  p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: $body-text-mobile;
+    width: 327px;
+    height: 198px;
+    line-height: 18px;
+    margin: 26px 0 0 0;
 
-      @include for-size(media-lg) {
-        font-size: $body-text-desktop;
-        width: 398px;
-        height: 283px;
-        line-height: 24px;
-      }
+    @include for-size(media-lg) {
+      font-size: $body-text-desktop;
+      width: 398px;
+      height: 283px;
+      line-height: 24px;
     }
+  }
 
   .plant-image-container {
     align-self: flex-end;
     width: 241px;
     height: 160px;
     margin-top: 60px;
-    
+
     .plant-image {
       max-width: 100%;
 
@@ -1653,9 +1643,7 @@
   }
 
   .section-heading-and-text {
-
     @include for-size(media-lg) {
-
     }
 
     h3 {
@@ -1683,7 +1671,6 @@
         font-size: $body-text-desktop;
         padding: 0 100px 0 100px;
         line-height: 24px;
-
       }
     }
 
@@ -1722,7 +1709,6 @@
 /**************************************************** SECTION "NAVIGATION" - SUBPAGE "IMPRESSUM" - BEGINNING ****************************************************/
 
 .header-imprint {
-
   .mobile-navbar {
     display: flex;
     justify-content: space-between;
@@ -1836,7 +1822,7 @@
         }
       }
     }
-    
+
     .close-burger-menu {
       width: 23.5px;
       height: 12.5px;
@@ -1856,7 +1842,7 @@
   margin: 78px auto 38px auto;
   padding-bottom: 20px;
 
-  @include for-size(media-lg){
+  @include for-size(media-lg) {
     margin: 219px auto 122px auto;
   }
 
@@ -1867,7 +1853,7 @@
     margin: 0;
     line-height: 56.25px;
 
-    @include for-size(media-lg){
+    @include for-size(media-lg) {
       font-size: $h2-desktop;
     }
   }
@@ -1880,7 +1866,7 @@
     margin-top: 2.5%;
     line-height: 49.22px;
 
-    @include for-size(media-lg){
+    @include for-size(media-lg) {
       font-size: $h3-desktop;
     }
   }
@@ -1893,7 +1879,7 @@
     margin-bottom: 5%;
     line-height: 24px;
 
-    @include for-size(media-lg){
+    @include for-size(media-lg) {
       font-size: $body-text-desktop;
     }
   }
@@ -1901,10 +1887,222 @@
 
 /**************************************************** SECTION "IMPRINT" - SUBPAGE "IMPRESSUM" - END ****************************************************/
 
+/**************************************************** "IMPRESSUM" PAGE - END ****************************************************/
 
+/**************************************************** "KONTAKT" PAGE - START ****************************************************/
 
+/**************************************************** SECTION "CONTACT-SECTION" - SUBPAGE "KONTAKT" - START ****************************************************/
 
+.contact-section {
+  width: 100%;
+  margin: 0;
 
+  h2 {
+    width: 286px;
+    height: 68px;
+    margin: 0;
+    padding: 78px 65px 0 24px;
 
+    font-style: normal;
+    font-weight: 900;
+    font-size: $h2-mobile;
+    line-height: 34px;
+  }
 
+  .contact-fomular {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
+    & .label-input-field {
+      width: 326px;
+      //margin: auto;
+      padding: 34px 0 5px 0;
+      font-style: normal;
+      font-weight: normal;
+      font-size: $body-text-mobile;
+      line-height: 18px;
+      color: $color-anthrazit;
+      background-color: none;
+    }
+
+    & .input-field {
+      width: 326px;
+      height: 40px;
+      //margin: auto;
+      border: none;
+      border-bottom: solid 3px $color-anthrazit;
+
+      &:focus {
+        outline: none;
+        background-color: $color-lightgrey;
+      }
+    }
+
+    & textarea {
+      width: 326px;
+      height: 120px;
+      //margin: auto;
+      border: none;
+      border-bottom: solid 3px $color-anthrazit;
+
+      &:focus {
+        outline: none;
+        background-color: $color-lightgrey;
+      }
+    }
+
+    /* DROPDOWN MENU */
+
+    & .dropdown {
+      position: relative;
+      margin: 40px 0 0 0;
+
+      & #full-button {
+        display: flex;
+        width: 326px;
+        height: 47px;
+        box-sizing: border-box;
+        background-color: $color-anthrazit;
+        color: $color-white;
+        border: 2px solid $color-anthrazit;
+        box-sizing: border-box;
+        border-radius: 5px 5px 5px 5px;
+
+        &:hover,
+        &:focus {
+          cursor: pointer;
+          background-color: $color-black;
+          border: 2px solid $color-black;
+        }
+
+        & .dropbtn {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 279px;
+          height: 47px;
+          margin: 0;
+          padding: 0;
+        }
+
+        & .arrow-container {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 47px;
+          height: 47px;
+
+          & .arrow {
+            width: 13.5px;
+            height: 10px;
+            transition: 0.75s ease;
+          }
+        }
+      }
+    }
+
+    /* Dropdown Content (Hidden by Default) */
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: $color-white;
+      width: 326px;
+      margin-top: 4px;
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      border: 2px solid $color-anthrazit;
+      box-sizing: border-box;
+      border-radius: 5px 5px 5px 5px;
+
+      /* text inside the dropdown */
+      & p {
+        color: $color-anthrazit;
+        cursor: pointer;
+        margin: 0;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+
+        /* Change color of dropdown links on hover */
+        &:hover {
+          background-color: $color-grey;
+        }
+      }
+    }
+
+    .main {
+      display: block;
+      position: relative;
+      margin: 40px 0 0 24px;
+      cursor: pointer;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 18px;
+    }
+
+    /* Hide the default checkbox */
+    input[type="checkbox"] {
+      visibility: hidden;
+    }
+
+    /* Creating a custom checkbox 
+  based on demand */
+    .checkbox-span {
+      position: absolute;
+      top: 0;
+      left: -20px;
+      height: 20px;
+      width: 20px;
+      border: 2px solid $color-anthrazit;
+      box-sizing: border-box;
+      border-radius: 5px;
+    }
+
+    /* Checkmark to be shown in checkbox */
+    /* It is not be shown when not checked */
+    .checkbox-span:after {
+      content: "";
+      position: absolute;
+      display: none;
+    }
+
+    /* Display checkmark when checked */
+    .main input:checked ~ .checkbox-span:after {
+      display: block;
+    }
+
+    /* Styling the checkmark using webkit */
+    .main .checkbox-span:after {
+      width: 12px;
+      height: 12px;
+      border: solid $color-anthrazit;
+      border-radius: 100%;
+      box-sizing: border-box;
+    }
+  }
+
+  .contact-send {
+    width: 163px;
+    height: 48px;
+    margin: 40px 0 40px 0;
+    border-radius: 5px;
+    border: 2px solid $color-anthrazit;
+    box-sizing: border-box;
+    padding: 15px 45px 15px 45px;
+    color: $color-white;
+    text-decoration: none;
+    background-color: $color-anthrazit;
+
+    &:hover {
+      border: 2px solid $color-mediumgrey;
+      background-color: $color-mediumgrey;
+    }
+
+    &:active {
+      border: 2px solid $color-kraftpaper;
+      background-color: $color-kraftpaper;
+    }
+  }
+}
