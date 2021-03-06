@@ -15,34 +15,31 @@
     <include src="only-nav.html"></include>
     <section class="contact-section">
       <h2>Du hast Fragen? Schreib uns gern!</h2>
-      <form
-        class="contact-fomular"
-        action="mailto:contact@kaffeerösterei.com"
-        method="POST"
-      >
+      <form class="contact-fomular" action="" method="POST">
         <label class="label-input-field" for="name">Name*</label>
         <br />
         <input
+          id="name"
           type="text"
           name="name"
           class="input-field"
-          placeholder="Name"
-          required
+          placeholder="Name*"
         />
         <br />
         <label class="label-input-field" for="email">E-Mail*</label>
         <br />
         <input
+          id="email"
           type="email"
           name="email"
           class="input-field"
-          placeholder="E-Mail"
-          required
+          placeholder="E-Mail*"
         />
         <br />
         <label class="label-input-field" for="tel">Telefonnummer</label>
         <br />
         <input
+          id="tel"
           type="tel"
           name="tel"
           class="input-field"
@@ -61,7 +58,6 @@
               >
                 <path
                   d="M13.7549 3.26855L7.29687 8.16602L6.98144 8.16602L0.523437 3.26855L0.523437 0.911132L7.13086 5.19434L13.7549 0.911133L13.7549 3.26855Z"
-                  fill="white"
                 />
               </svg>
             </div>
@@ -77,17 +73,17 @@
         <label class="label-input-field" for="message">Deine Nachricht</label>
         <br />
         <textarea
+          id="message"
           type="textarea"
           name="message"
-          id=""
           rows="4"
           cols="20"
           placeholder="Was hast du auf dem Herzen?"
         ></textarea>
         <br />
-        <label class="main">
-          <input type="checkbox" />
-          <span class="checkbox-span"></span>
+        <label id="main" class="main">
+          <input id="checkbox" type="checkbox" />
+          <span id="id-checkbox-span" class="checkbox-span"></span>
           Ich akzeptiere die Datenschutzerklärung
         </label>
         <br />
@@ -96,6 +92,5 @@
     </section>
     <include src="footer-subpages.html"></include>
     <script src="../js/index.js"></script>
-    <script src="../js/dropdown.js"></script>
   </body>
 </html>

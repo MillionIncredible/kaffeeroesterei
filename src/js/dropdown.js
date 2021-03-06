@@ -23,6 +23,36 @@ function dropdown() {
   }
   */
 
+  function handleOptionClick(event) {
+    // let output;
+    if(event.target.id === "option1") {
+        document.getElementById("dropbtn").textContent = document.getElementById("option1").textContent;
+        // output = document.getElementById("option1").textContent;
+      }
+      else if(event.target.id === "option2") {
+        document.getElementById("dropbtn").textContent = document.getElementById("option2").textContent;
+        // output = document.getElementById("option2").textContent;
+      }
+      else if(event.target.id === "option3") {
+        document.getElementById("dropbtn").textContent = document.getElementById("option3").textContent;
+        // output = document.getElementById("option3").textContent;
+      }
+      else if(event.target.id === "option4") {
+        document.getElementById("dropbtn").textContent = document.getElementById("option4").textContent;
+        // output = document.getElementById("option4").textContent;
+      }
+      else {
+        document.getElementById("dropbtn").textContent = "Try again!";
+      }
+      document.getElementById("myDropdown").style.display = "none";
+      document.getElementById("arrow").style.transform = "rotate(0deg)";
+    };
+
+  const selection = document.querySelectorAll(".selection");
+
+  selection.forEach((option) => option.addEventListener("click", handleOptionClick));
+}
+
   /* Easiest functional solution, but not pretty
 
   document.getElementById("option1").onclick = function option1() {
@@ -49,35 +79,5 @@ function dropdown() {
     document.getElementById("arrow").style.transform = "rotate(0deg)";
   }
   */
-
-  function handleOptionClick(event) {
-    let output;
-    if(event.target.id === "option1") {
-        document.getElementById("dropbtn").textContent = document.getElementById("option1").textContent;
-        output = document.getElementById("option1").textContent;
-      }
-      else if(event.target.id === "option2") {
-        document.getElementById("dropbtn").textContent = document.getElementById("option2").textContent;
-        output = document.getElementById("option2").textContent;
-      }
-      else if(event.target.id === "option3") {
-        document.getElementById("dropbtn").textContent = document.getElementById("option3").textContent;
-        output = document.getElementById("option3").textContent;
-      }
-      else if(event.target.id === "option4") {
-        document.getElementById("dropbtn").textContent = document.getElementById("option4").textContent;
-        output = document.getElementById("option4").textContent;
-      }
-      else {
-        document.getElementById("dropbtn").textContent = "Error";
-      }
-      document.getElementById("myDropdown").style.display = "none";
-      document.getElementById("arrow").style.transform = "rotate(0deg)";
-    };
-
-  const selection = document.querySelectorAll(".selection");
-
-  selection.forEach((option) => option.addEventListener("click", handleOptionClick));
-}
 
 export default dropdown;

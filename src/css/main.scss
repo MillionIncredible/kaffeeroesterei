@@ -1995,6 +1995,7 @@
           height: 47px;
 
           & .arrow {
+            fill: $color-white;
             width: 13.5px;
             height: 10px;
             transition: 0.75s ease;
@@ -2047,8 +2048,7 @@
       visibility: hidden;
     }
 
-    /* Creating a custom checkbox 
-  based on demand */
+    /* Creating a custom checkbox*/
     .checkbox-span {
       position: absolute;
       top: 0;
@@ -2079,7 +2079,9 @@
       height: 12px;
       border: solid $color-anthrazit;
       border-radius: 100%;
+      background-color: $color-black;
       box-sizing: border-box;
+      transform: translate(15%, 15%);
     }
   }
 
